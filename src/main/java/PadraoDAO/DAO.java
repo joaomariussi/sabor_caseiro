@@ -16,8 +16,7 @@ public class DAO<E> {
         try {
             entityManagerFactory = Persistence.createEntityManagerFactory("sabor_caseiro");
         } catch (Exception e) {
-            //
-
+            e.printStackTrace();
         }
     }
 
