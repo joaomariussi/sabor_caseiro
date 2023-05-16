@@ -16,7 +16,7 @@ public class NovoUsuario {
                 EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("sabor_caseiro");
                 EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-                Usuario novoUsuario = new Usuario("Guilherme","gui@gmail.com","11223344");
+                Usuario novoUsuario = new Usuario("Joao","joao@gmail.com","10203040");
 
                 entityManager.getTransaction().begin();
                 entityManager.persist(novoUsuario);
@@ -28,7 +28,7 @@ public class NovoUsuario {
                 System.out.println("Usuário inserido com sucesso!");
 
             } catch (Exception e) {
-                System.out.println("Erro ao inserir usuário, tente novamente!");
+                e.printStackTrace();
             }
     }
 }
