@@ -4,14 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment="" />
+    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Adicionando uma tela de teste">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Pedido.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -20,20 +38,65 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2OwKCa6BVZ9c7agNdREpn6eFFA3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_opened_file_path": "C:/Users/joaom/OneDrive/Área de Trabalho/sabor_caseiro/libs/xml-apis-1.3.03.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3816092",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources\META-INF" />
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\libs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Contador" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="View.Contador" />
+      <module name="sabor_caseiro" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path C:\fx_windows\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path C:\fx_windows\lib --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Contador" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,8 +105,73 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682466079480</updated>
-      <workItem from="1682466080623" duration="1000" />
+      <workItem from="1682466080623" duration="3089000" />
+      <workItem from="1682469198148" duration="1214000" />
+      <workItem from="1682521052639" duration="7152000" />
+      <workItem from="1682775122939" duration="4272000" />
+      <workItem from="1682780706577" duration="133000" />
+      <workItem from="1682791868271" duration="2015000" />
+      <workItem from="1683066295849" duration="7459000" />
+      <workItem from="1683160793168" duration="1796000" />
+      <workItem from="1683162611662" duration="2046000" />
+      <workItem from="1683238286627" duration="2486000" />
+      <workItem from="1683241330241" duration="683000" />
+      <workItem from="1683396686330" duration="15233000" />
+      <workItem from="1683475589889" duration="79000" />
+      <workItem from="1683674423036" duration="7417000" />
+      <workItem from="1683762796396" duration="5581000" />
+      <workItem from="1683842941168" duration="5280000" />
+      <workItem from="1683889332205" duration="1540000" />
+      <workItem from="1684081686444" duration="582000" />
+      <workItem from="1684082282857" duration="4407000" />
+      <workItem from="1684189440069" duration="5149000" />
+      <workItem from="1684194613312" duration="2993000" />
+      <workItem from="1684794443139" duration="6405000" />
     </task>
+    <task id="LOCAL-00001" summary=":rocket:Ajustes na Classe">
+      <created>1684197201591</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684197201591</updated>
+    </task>
+    <task id="LOCAL-00002" summary=":rocket: Novos Ajustes no projeto">
+      <created>1684197312374</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684197312374</updated>
+    </task>
+    <task id="LOCAL-00003" summary=":rocket: Adicionando uma tela de teste">
+      <created>1684197517944</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684197517944</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":rocket:Ajustes na Classe" />
+    <MESSAGE value=":rocket: Novos Ajustes no projeto" />
+    <MESSAGE value=":rocket: Adicionando uma tela de teste" />
+    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Adicionando uma tela de teste" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

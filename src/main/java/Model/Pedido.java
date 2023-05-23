@@ -2,7 +2,6 @@ package Model;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Table(name = "pedidos")
@@ -13,7 +12,7 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private Integer id_cliente;
+    //private Integer id_cliente;
 
     @Column(nullable = false)
     private Date data_pedido;
@@ -32,9 +31,6 @@ public class Pedido {
     @JoinColumn(name = "id_cliente")
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
-    private List<StatusPedido> statusPedidos;
-
     public Pedido() {
 
     }
@@ -47,13 +43,13 @@ public class Pedido {
         this.id = id;
     }
 
-    public Integer getId_cliente() {
-        return id_cliente;
-    }
+    //public Integer getId_cliente() {
+      //  return id_cliente;
+   // }
 
-    public void setId_cliente(Integer id_cliente) {
-        this.id_cliente = id_cliente;
-    }
+    // public void setId_cliente(Integer id_cliente) {
+    //    this.id_cliente = id_cliente;
+    // }
 
     public Date getData_pedido() {
         return data_pedido;
