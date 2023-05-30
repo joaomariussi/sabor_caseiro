@@ -1,6 +1,8 @@
 package Model;
 
 import javax.persistence.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -43,6 +45,26 @@ public class Cliente {
 
     public Cliente() {
 
+    }
+
+    public Cliente(String nome, String cpf, String telefone, String endereco, String cep, String cidade, String estado, String data_nasc, String genero) {
+        super();
+        this.nome = nome;
+        this.cpf = cpf;
+        this.telefone = telefone;
+        this.endereco = endereco;
+        this.cep = cep;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.genero = genero;
+
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+            this.data_nasc = formatter.parse(String.valueOf(data_nasc));
+        } catch (ParseException e) {
+            // Lidar com a exceção de formatação de data, se necessário
+            e.printStackTrace();
+        }
     }
 
     public Integer getId() {
@@ -113,8 +135,14 @@ public class Cliente {
         return data_nasc;
     }
 
-    public void setData_nasc(Date data_nasc) {
-        this.data_nasc = data_nasc;
+    public void setData_nasc(String data_nasc) {
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+            this.data_nasc = formatter.parse(data_nasc);
+        } catch (ParseException e) {
+            // Lidar com a exceção de formatação de data, se necessário
+            e.printStackTrace();
+        }
     }
 
     public String getGenero() {
