@@ -1,27 +1,27 @@
 package Controller;
 
-import Model.Usuario;
+import Model.Cliente;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class RemoverUsuario {
+public class RemoverCliente {
 
     public static void main(String[] args) {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("sabor_caseiro");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        Usuario usuario = entityManager.find(Usuario.class, 2);
+        Cliente cliente = entityManager.find(Cliente.class, 2);
 
-        if (usuario != null) {
+        if (cliente != null) {
             entityManager.getTransaction().begin();
-            entityManager.remove(usuario);
+            entityManager.remove(cliente);
             entityManager.getTransaction().commit();
-            System.out.println("Usuário deletado com Sucesso!");
+            System.out.println("Cliente deletado com Sucesso!");
         } else {
-            System.out.println("Usuário não encontrado");
+            System.out.println("Cliente não encontrado");
         }
 
         entityManager.close();
