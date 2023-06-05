@@ -3,9 +3,9 @@ package Model;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "pratos")
 
-
-public class Pratos {
+public class Prato {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,11 +21,11 @@ public class Pratos {
     @Column(name = "descricao")
     private String descricao;
 
-    public Pratos() {
+    public Prato() {
 
     }
 
-    public Pratos(String nome, Double valor, String descricao) {
+    public Prato(String nome, Double valor, String descricao) {
         super();
         this.nome = nome;
         this.valor = valor;

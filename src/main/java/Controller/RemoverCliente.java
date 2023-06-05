@@ -10,6 +10,8 @@ public class RemoverCliente {
 
     public static void main(String[] args) {
 
+        //faz a exclusão do cliente
+
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("sabor_caseiro");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 

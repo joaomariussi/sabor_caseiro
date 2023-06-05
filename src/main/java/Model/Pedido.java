@@ -1,29 +1,26 @@
 package Model;
 
 import javax.persistence.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
 @Table(name = "pedidos")
-
 public class Pedido {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    //private Integer id_cliente;
-
     @Column(nullable = false)
-    private Date data_pedido;
+    private Date data_entrega;
 
     @Column(nullable = false)
     private Double valor;
 
-    private Integer id_status_pedido;
-
     @Column(nullable = false)
-    private Integer pessoas;
+    private String pessoas;
 
     private String observacoes;
 
@@ -31,8 +28,25 @@ public class Pedido {
     @JoinColumn(name = "id_cliente")
     private Cliente cliente;
 
-    public Pedido() {
+    @ManyToOne
+    @JoinColumn(name = "id_status_pedido")
+    private StatusPedido statusPedido;
 
+    public Pedido() {
+    }
+
+    public Pedido(String data_entrega, Double valor, String pessoas, String observacoes) {
+        super();
+        this.valor = valor;
+        this.pessoas = pessoas;
+        this.observacoes = observacoes;
+
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+            this.data_entrega = formatter.parse(String.valueOf(data_entrega));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     public Integer getId() {
@@ -43,20 +57,17 @@ public class Pedido {
         this.id = id;
     }
 
-    //public Integer getId_cliente() {
-      //  return id_cliente;
-   // }
-
-    // public void setId_cliente(Integer id_cliente) {
-    //    this.id_cliente = id_cliente;
-    // }
-
-    public Date getData_pedido() {
-        return data_pedido;
+    public Date getData_entrega() {
+        return data_entrega;
     }
 
-    public void setData_pedido(Date data_pedido) {
-        this.data_pedido = data_pedido;
+    public void setData_entrega(String data_entrega) {
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        try {
+            this.data_entrega = formatter.parse(data_entrega);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     public Double getValor() {
@@ -67,19 +78,11 @@ public class Pedido {
         this.valor = valor;
     }
 
-    public Integer getId_status_pedido() {
-        return id_status_pedido;
-    }
-
-    public void setId_status_pedido(Integer id_status_pedido) {
-        this.id_status_pedido = id_status_pedido;
-    }
-
-    public Integer getPessoas() {
+    public String getPessoas() {
         return pessoas;
     }
 
-    public void setPessoas(Integer pessoas) {
+    public void setPessoas(String pessoas) {
         this.pessoas = pessoas;
     }
 
@@ -91,4 +94,19 @@ public class Pedido {
         this.observacoes = observacoes;
     }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public StatusPedido getStatusPedido() {
+        return statusPedido;
+    }
+
+    public void setStatusPedido(StatusPedido statusPedido) {
+        this.statusPedido = statusPedido;
+    }
 }

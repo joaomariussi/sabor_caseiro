@@ -62,7 +62,6 @@ public class Cliente {
         try {
             this.data_nasc = formatter.parse(String.valueOf(data_nasc));
         } catch (ParseException e) {
-            // Lidar com a exceção de formatação de data, se necessário
             e.printStackTrace();
         }
     }
@@ -140,7 +139,6 @@ public class Cliente {
         try {
             this.data_nasc = formatter.parse(data_nasc);
         } catch (ParseException e) {
-            // Lidar com a exceção de formatação de data, se necessário
             e.printStackTrace();
         }
     }
