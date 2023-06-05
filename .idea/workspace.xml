@@ -4,14 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Adicionando uma tela de teste">
+    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AlterarUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PadraoDAO/PratosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PadraoDAO/PratosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Contador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/PrimeiroFX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/teste.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -19,23 +35,29 @@
         <option value="Kotlin Class" />
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
         <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProblemsViewState">
@@ -49,51 +71,154 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_opened_file_path": "C:/Users/joaom/OneDrive/Área de Trabalho/sabor_caseiro/libs/xml-apis-1.3.03.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3816092",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/joaom/OneDrive/Área de Trabalho/mysql-connector-j-8.0.32.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3816092&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\java" />
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\java\Views" />
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\target\classes" />
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\out\production\sabor_caseiro" />
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources\Application" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources\META-INF" />
-      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\libs" />
+      <recent name="C:\sabor_caseiro\src\main\resources" />
+      <recent name="C:\sabor_caseiro\libs" />
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources\views\Application" />
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources\views" />
+      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Views" />
+      <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Contador" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="View.Contador" />
+  <component name="RunManager" selected="Application.main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application.Main" />
       <module name="sabor_caseiro" />
-      <option name="PROGRAM_PARAMETERS" value="--module-path C:\fx_windows\lib --add-modules javafx.controls,javafx.fxml" />
-      <option name="VM_PARAMETERS" value="--module-path C:\fx_windows\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\openjfx-20.0.1_windows-x64_bin-sdk\javafx-sdk-20.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\openjfx-20.0.1_windows-x64_bin-sdk\javafx-sdk-20.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NovoCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.NovoCliente" />
+      <module name="sabor_caseiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NovoPedido" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.NovoPedido" />
+      <module name="sabor_caseiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NovoPrato" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.NovoPrato" />
+      <module name="sabor_caseiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObterClientes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.ObterClientes" />
+      <module name="sabor_caseiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Application.Main" />
+      <module name="sabor_caseiro" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\openjfx-20.0.1_windows-x64_bin-sdk\javafx-sdk-20.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\openjfx-20.0.1_windows-x64_bin-sdk\javafx-sdk-20.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="teste" />
+      <module name="sabor_caseiro" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\openjfx-20.0.1_windows-x64_bin-sdk\javafx-sdk-20.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\openjfx-20.0.1_windows-x64_bin-sdk\javafx-sdk-20.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.NovoPedido" />
+      <item itemvalue="Application.teste" />
+      <item itemvalue="Application.NovoCliente" />
+      <item itemvalue="Application.ObterClientes" />
+      <item itemvalue="Application.NovoPrato" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Contador" />
+        <item itemvalue="Application.ObterClientes" />
+        <item itemvalue="Application.NovoPrato" />
+        <item itemvalue="Application.NovoPedido" />
+        <item itemvalue="Application.teste" />
+        <item itemvalue="Application.NovoCliente" />
       </list>
     </recent_temporary>
   </component>
@@ -127,6 +252,27 @@
       <workItem from="1684189440069" duration="5149000" />
       <workItem from="1684194613312" duration="2993000" />
       <workItem from="1684794443139" duration="6405000" />
+      <workItem from="1684883906124" duration="408000" />
+      <workItem from="1684970240688" duration="4162000" />
+      <workItem from="1685196377350" duration="4106000" />
+      <workItem from="1685202307066" duration="4434000" />
+      <workItem from="1685284095267" duration="571000" />
+      <workItem from="1685377866313" duration="6013000" />
+      <workItem from="1685402757211" duration="85000" />
+      <workItem from="1685402957673" duration="1159000" />
+      <workItem from="1685404129131" duration="792000" />
+      <workItem from="1685443916393" duration="1834000" />
+      <workItem from="1685445890160" duration="80000" />
+      <workItem from="1685473196385" duration="502000" />
+      <workItem from="1685473881897" duration="613000" />
+      <workItem from="1685485761618" duration="6961000" />
+      <workItem from="1685575232894" duration="3169000" />
+      <workItem from="1685657502147" duration="5307000" />
+      <workItem from="1685670700554" duration="3106000" />
+      <workItem from="1685704382892" duration="149000" />
+      <workItem from="1685746798623" duration="239000" />
+      <workItem from="1685800764003" duration="8451000" />
+      <workItem from="1685963804596" duration="1266000" />
     </task>
     <task id="LOCAL-00001" summary=":rocket:Ajustes na Classe">
       <created>1684197201591</created>
@@ -149,7 +295,77 @@
       <option name="project" value="LOCAL" />
       <updated>1684197517944</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=":rocket: Adicionando o arquivo persistence.xml">
+      <created>1684884016304</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684884016305</updated>
+    </task>
+    <task id="LOCAL-00005" summary=":rocket: Ajustes no Pedido.java">
+      <created>1684884103933</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684884103933</updated>
+    </task>
+    <task id="LOCAL-00006" summary=":rocket: Testando a criação de uma tela com um Contador.">
+      <created>1684884274092</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684884274092</updated>
+    </task>
+    <task id="LOCAL-00007" summary=":rocket: Criando a função que faz o cadastro de um novo cliente.">
+      <created>1685489792599</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685489792599</updated>
+    </task>
+    <task id="LOCAL-00008" summary=":rocket: Criando os métodos do cliente e também fazendo a formatação de String data_nasc para Date.">
+      <created>1685490064928</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685490064928</updated>
+    </task>
+    <task id="LOCAL-00009" summary=":rocket: Alterando a classe &quot;Pratos&quot; para &quot;Prato&quot;">
+      <created>1685803791391</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685803791391</updated>
+    </task>
+    <task id="LOCAL-00010" summary=":rocket: Alterando o código para fazer a remoção do cliente">
+      <created>1685803930624</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685803930624</updated>
+    </task>
+    <task id="LOCAL-00011" summary=":rocket: Adicionando o arquvio main no projeto.">
+      <created>1685964351280</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685964351280</updated>
+    </task>
+    <task id="LOCAL-00012" summary=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto">
+      <created>1685964601742</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685964601742</updated>
+    </task>
+    <task id="LOCAL-00013" summary=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto">
+      <created>1685964717070</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685964717070</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +378,16 @@
     <MESSAGE value=":rocket:Ajustes na Classe" />
     <MESSAGE value=":rocket: Novos Ajustes no projeto" />
     <MESSAGE value=":rocket: Adicionando uma tela de teste" />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Adicionando uma tela de teste" />
+    <MESSAGE value=":rocket: Adicionando o arquivo persistence.xml" />
+    <MESSAGE value=":rocket: Ajustes no Pedido.java" />
+    <MESSAGE value=":rocket: Testando a criação de uma tela com um Contador." />
+    <MESSAGE value=":rocket: Criando a função que faz o cadastro de um novo cliente." />
+    <MESSAGE value=":rocket: Criando os métodos do cliente e também fazendo a formatação de String data_nasc para Date." />
+    <MESSAGE value=":rocket: Alterando a classe &quot;Pratos&quot; para &quot;Prato&quot;" />
+    <MESSAGE value=":rocket: Alterando o código para fazer a remoção do cliente" />
+    <MESSAGE value=":rocket: Adicionando o arquvio main no projeto." />
+    <MESSAGE value=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -173,5 +398,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

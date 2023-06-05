@@ -1,10 +1,10 @@
 package PadraoDAO;
 
-import Model.Pratos;
+import Model.Prato;
 
-public class PratosDAO extends DAO<Pratos> {
+public class PratosDAO extends DAO<Prato> {
 
-    public PratosDAO(Class<Pratos> classe) {
+    public PratosDAO(Class<Prato> classe) {
         super(classe);
     }
 }
