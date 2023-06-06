@@ -15,10 +15,10 @@ public class Cardapio {
     @OneToMany(mappedBy = "cardapio")
     private List<PratosCardapio> pratosCardapio;
 
-    @Column(nullable = false)
+    @Column(name = "nome")
     private String nome;
 
-    @Column(nullable = false)
+    @Column(name = "valor_pessoa")
     private Double valor_pessoa;
 
     public Cardapio() {

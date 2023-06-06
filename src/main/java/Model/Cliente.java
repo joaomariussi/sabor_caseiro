@@ -15,29 +15,31 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
+    @Column(name = "nome")
     private String nome;
 
-    @Column(nullable = false)
+    @Column(name = "cpf")
     private String cpf;
 
-    @Column(nullable = false)
+    @Column(name = "telefone")
     private String telefone;
 
-    @Column(nullable = false)
+    @Column(name = "endereco")
     private String endereco;
 
-    @Column(nullable = false)
+    @Column(name = "cep")
     private String cep;
 
-    @Column(nullable = false)
+    @Column(name = "cidade")
     private String cidade;
 
-    @Column(nullable = false)
+    @Column(name = "estado")
     private String estado;
 
+    @Column(name = "data_nasc")
     private Date data_nasc;
 
+    @Column(name = "genero")
     private String genero;
 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)

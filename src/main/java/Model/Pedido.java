@@ -13,15 +13,13 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
+    @Column(name = "data_entrega")
     private Date data_entrega;
 
-    @Column(nullable = false)
+    @Column(name = "valor")
     private Double valor;
 
-    @Column(nullable = false)
-    private String pessoas;
-
+    @Column(name = "observacoes")
     private String observacoes;
 
     @ManyToOne
@@ -35,10 +33,9 @@ public class Pedido {
     public Pedido() {
     }
 
-    public Pedido(String data_entrega, Double valor, String pessoas, String observacoes) {
+    public Pedido(String data_entrega, Double valor, String observacoes) {
         super();
         this.valor = valor;
-        this.pessoas = pessoas;
         this.observacoes = observacoes;
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
@@ -76,14 +73,6 @@ public class Pedido {
 
     public void setValor(Double valor) {
         this.valor = valor;
-    }
-
-    public String getPessoas() {
-        return pessoas;
-    }
-
-    public void setPessoas(String pessoas) {
-        this.pessoas = pessoas;
     }
 
     public String getObservacoes() {
