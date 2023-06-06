@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Devolution/devolution.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/NewLease/pedido.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/attribute.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/category.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/client.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/optional.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/vehicle.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Registration/registration.fxml" afterDir="false" />
+    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Adicionando as views para ter uma base no projeto.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/NovoPrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/NovoPrato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ObterPratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ObterPratos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/NewLease/pedido.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NovoPedido/novoPedido.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Records/client.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Records/client.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Registration/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Cadastros/cadastros.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +126,7 @@
       <module name="sabor_caseiro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="Controller.CardapioController" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,7 +154,7 @@
       <module name="sabor_caseiro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="Controller.CardapioController" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,7 +167,7 @@
       <module name="sabor_caseiro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="Controller.CardapioController" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,7 +180,7 @@
       <module name="sabor_caseiro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="Controller.CardapioController" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -282,7 +277,7 @@
       <workItem from="1685800764003" duration="8451000" />
       <workItem from="1685963804596" duration="1266000" />
       <workItem from="1686054276157" duration="6057000" />
-      <workItem from="1686076967347" duration="3012000" />
+      <workItem from="1686076967347" duration="5938000" />
     </task>
     <task id="LOCAL-00001" summary=":rocket:Ajustes na Classe">
       <created>1684197201591</created>
@@ -424,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686077899212</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary=":rocket: Adicionando as views para ter uma base no projeto.">
+      <created>1686080054727</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686080054727</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +467,8 @@
     <MESSAGE value=":fire: Deletando os arquivos DAO para implementar novos." />
     <MESSAGE value=":rocket: Adicionando a coluna nos respectivos nomes." />
     <MESSAGE value=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco" />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco" />
+    <MESSAGE value=":rocket: Adicionando as views para ter uma base no projeto." />
+    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Adicionando as views para ter uma base no projeto." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

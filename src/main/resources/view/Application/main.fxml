@@ -14,7 +14,7 @@
             <Image url="@../../Images/teste.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="pedidoAction" layoutX="43.0" layoutY="255.0" mnemonicParsing="false" onAction="#pedidoAction" prefHeight="34.0" prefWidth="158.0" text="Pedidos" textFill="#000000">
+      <Button fx:id="novoPedido" layoutX="43.0" layoutY="255.0" mnemonicParsing="false" onAction="#novoPedido" prefHeight="34.0" prefWidth="158.0" text="Novo Pedido" textFill="#000000">
          <effect>
             <ColorAdjust />
          </effect>
@@ -22,7 +22,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="devolutionAction" layoutX="221.0" layoutY="255.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="158.0" text="Devolução" textFill="#000000">
+      <Button fx:id="devolutionAction" layoutX="221.0" layoutY="255.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="158.0" text="Cardápios" textFill="#000000">
          <effect>
             <ColorAdjust />
          </effect>
@@ -30,7 +30,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="registrationAction" layoutX="400.0" layoutY="255.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="158.0" text="Cadastros" textFill="#000000">
+      <Button fx:id="cadastro" layoutX="400.0" layoutY="255.0" mnemonicParsing="false" onAction="#cadastro" prefHeight="34.0" prefWidth="158.0" text="Cadastros" textFill="#000000">
          <effect>
             <ColorAdjust />
          </effect>
