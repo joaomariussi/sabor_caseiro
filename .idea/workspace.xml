@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto">
+    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Adicionando a coluna nos respectivos nomes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/NovoPrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/NovoPrato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ObterPratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ObterPratos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +29,8 @@
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,6 +42,9 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/Model/PratosCardapio.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -108,7 +113,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.ClienteController">
+    <configuration name="ClienteController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.ClienteController" />
+      <module name="sabor_caseiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Application.Main" />
       <module name="sabor_caseiro" />
@@ -117,32 +135,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Application.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NovoCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Controller.NovoCliente" />
-      <module name="sabor_caseiro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NovoPedido" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Controller.NovoPedido" />
-      <module name="sabor_caseiro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,6 +168,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PedidoController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.PedidoController" />
+      <module name="sabor_caseiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Application.Main" />
       <module name="sabor_caseiro" />
@@ -196,20 +201,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.main" />
+      <item itemvalue="Application.ClienteController" />
+      <item itemvalue="Application.PedidoController" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.NovoPedido" />
       <item itemvalue="Application.teste" />
-      <item itemvalue="Application.NovoCliente" />
       <item itemvalue="Application.ObterClientes" />
       <item itemvalue="Application.NovoPrato" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PedidoController" />
+        <item itemvalue="Application.ClienteController" />
+        <item itemvalue="Application.teste" />
         <item itemvalue="Application.ObterClientes" />
         <item itemvalue="Application.NovoPrato" />
-        <item itemvalue="Application.NovoPedido" />
-        <item itemvalue="Application.teste" />
-        <item itemvalue="Application.NovoCliente" />
       </list>
     </recent_temporary>
   </component>
@@ -264,6 +269,8 @@
       <workItem from="1685746798623" duration="239000" />
       <workItem from="1685800764003" duration="8451000" />
       <workItem from="1685963804596" duration="1266000" />
+      <workItem from="1686054276157" duration="6057000" />
+      <workItem from="1686076967347" duration="838000" />
     </task>
     <task id="LOCAL-00001" summary=":rocket:Ajustes na Classe">
       <created>1684197201591</created>
@@ -356,7 +363,49 @@
       <option name="project" value="LOCAL" />
       <updated>1685964717070</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=":rocket: Ajustando a model Cardapio">
+      <created>1686053860421</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686053860421</updated>
+    </task>
+    <task id="LOCAL-00015" summary=":rocket: Fazendo o mapeamento da tabela Cardapio com a tabela PratosCardapio.">
+      <created>1686054148976</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686054148976</updated>
+    </task>
+    <task id="LOCAL-00016" summary=":truck: Renomeando os arquivos de forma correta.">
+      <created>1686054921474</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686054921474</updated>
+    </task>
+    <task id="LOCAL-00017" summary=":rocket: Fazendo o mapeamento da tabela PratosCardapio com a tabela Cardapio.">
+      <created>1686055205321</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686055205321</updated>
+    </task>
+    <task id="LOCAL-00018" summary=":fire: Deletando os arquivos DAO para implementar novos.">
+      <created>1686075618955</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686075618955</updated>
+    </task>
+    <task id="LOCAL-00019" summary=":rocket: Adicionando a coluna nos respectivos nomes.">
+      <created>1686077119315</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686077119315</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +439,13 @@
     <MESSAGE value=":rocket: Adicionando o arquvio main no projeto." />
     <MESSAGE value=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto" />
     <MESSAGE value=":arrow_up: Adicionando o javax.persistence.jar na libs" />
-    <option name="LAST_COMMIT_MESSAGE" value=":arrow_up: Adicionando o javax.persistence.jar na libs" />
+    <MESSAGE value=":rocket: Ajustando a model Cardapio" />
+    <MESSAGE value=":rocket: Fazendo o mapeamento da tabela Cardapio com a tabela PratosCardapio." />
+    <MESSAGE value=":truck: Renomeando os arquivos de forma correta." />
+    <MESSAGE value=":rocket: Fazendo o mapeamento da tabela PratosCardapio com a tabela Cardapio." />
+    <MESSAGE value=":fire: Deletando os arquivos DAO para implementar novos." />
+    <MESSAGE value=":rocket: Adicionando a coluna nos respectivos nomes." />
+    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Adicionando a coluna nos respectivos nomes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
