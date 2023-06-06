@@ -1,6 +1,7 @@
 package Model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "cardapio")
@@ -11,6 +12,9 @@ public class Cardapio {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @OneToMany(mappedBy = "cardapio")
+    private List<PratosCardapio> pratosCardapio;
+
     @Column(nullable = false)
     private String nome;
 
@@ -18,6 +22,12 @@ public class Cardapio {
     private Double valor_pessoa;
 
     public Cardapio() {
+    }
+
+    public Cardapio(String nome, Double valor_pessoa) {
+        super();
+        this.nome = nome;
+        this.valor_pessoa = valor_pessoa;
     }
 
     public Integer getId() {
@@ -42,5 +52,13 @@ public class Cardapio {
 
     public void setValorPessoa(Double valor_pessoa) {
         this.valor_pessoa = valor_pessoa;
+    }
+
+    public List<PratosCardapio> getPratosCardapio() {
+        return pratosCardapio;
+    }
+
+    public void setPratosCardapio(List<PratosCardapio> pratosCardapio) {
+        this.pratosCardapio = pratosCardapio;
     }
 }
