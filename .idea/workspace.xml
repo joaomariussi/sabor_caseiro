@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Adicionando a coluna nos respectivos nomes.">
+    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Devolution/devolution.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/NewLease/pedido.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/attribute.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/category.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/client.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/optional.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Records/vehicle.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Registration/registration.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/NovoPrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/NovoPrato.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ObterPratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ObterPratos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +125,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ClienteController">
+  <component name="RunManager" selected="Application.main">
     <configuration name="ClienteController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.ClienteController" />
       <module name="sabor_caseiro" />
@@ -270,7 +282,7 @@
       <workItem from="1685800764003" duration="8451000" />
       <workItem from="1685963804596" duration="1266000" />
       <workItem from="1686054276157" duration="6057000" />
-      <workItem from="1686076967347" duration="838000" />
+      <workItem from="1686076967347" duration="3012000" />
     </task>
     <task id="LOCAL-00001" summary=":rocket:Ajustes na Classe">
       <created>1684197201591</created>
@@ -405,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686077119315</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco">
+      <created>1686077899212</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686077899212</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +464,8 @@
     <MESSAGE value=":rocket: Fazendo o mapeamento da tabela PratosCardapio com a tabela Cardapio." />
     <MESSAGE value=":fire: Deletando os arquivos DAO para implementar novos." />
     <MESSAGE value=":rocket: Adicionando a coluna nos respectivos nomes." />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Adicionando a coluna nos respectivos nomes." />
+    <MESSAGE value=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco" />
+    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

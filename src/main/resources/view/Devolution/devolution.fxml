@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DevolutionController">
+    <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" smooth="false">
+        <image>
+            <Image url="@../../Images/devolution_screen.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="selectContract" layoutX="21.0" layoutY="79.0" mnemonicParsing="false" onAction="#selectContractAction" prefHeight="32.0" prefWidth="190.0" text="Informe o ID do contrato" textFill="#f68500">
+        <effect>
+            <ColorAdjust />
+        </effect>
+    </Button>
+    <Button fx:id="selectDateAction" disable="true" layoutX="21.0" layoutY="117.0" mnemonicParsing="false" onAction="#selectDateAction" prefHeight="32.0" prefWidth="190.0" text="Data de devolução" textFill="#f68500">
+        <effect>
+            <ColorAdjust />
+        </effect>
+    </Button>
+    <Button fx:id="selectValueAction" disable="true" layoutX="21.0" layoutY="157.0" mnemonicParsing="false" onAction="#selectValueAction" prefHeight="32.0" prefWidth="190.0" text="Valor a receber" textFill="#f68500">
+        <effect>
+            <ColorAdjust />
+        </effect>
+    </Button>
+    <Button fx:id="selectFinishAction" disable="true" layoutX="320.0" layoutY="365.0" mnemonicParsing="false" onAction="#selectFinishAction" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #F68500;" text="Finalizar" textFill="WHITE">
+        <effect>
+            <ColorAdjust />
+        </effect>
+    </Button>
+    <Button fx:id="backAction" layoutX="180.0" layoutY="365.0" mnemonicParsing="false" onAction="#backAction" prefHeight="20.0" prefWidth="100.0" text="Voltar">
+        <effect>
+            <ColorAdjust />
+        </effect>
+    </Button>
+    <TextField fx:id="fieldContract" disable="true" editable="false" layoutX="223.0" layoutY="79.0" prefHeight="32.0" prefWidth="359.0">
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor></TextField>
+    <TextField fx:id="fieldDate" disable="true" editable="false" layoutX="223.0" layoutY="117.0" prefHeight="32.0" prefWidth="359.0">
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor></TextField>
+    <TextField fx:id="fieldValue" disable="true" editable="false" layoutX="223.0" layoutY="157.0" prefHeight="32.0" prefWidth="359.0">
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor></TextField>
+    <Label layoutX="238.0" layoutY="47.0" text="Devolução" textFill="WHITE">
+        <font>
+            <Font name="Arial" size="20.0" />
+        </font>
+    </Label>
+</Pane>

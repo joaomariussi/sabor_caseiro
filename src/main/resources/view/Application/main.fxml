@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" snapToPixel="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Main">
+   <children>
+      <ImageView pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../Images/teste.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="pedidoAction" layoutX="43.0" layoutY="255.0" mnemonicParsing="false" onAction="#pedidoAction" prefHeight="34.0" prefWidth="158.0" text="Pedidos" textFill="#000000">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="devolutionAction" layoutX="221.0" layoutY="255.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="158.0" text="Devolução" textFill="#000000">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="registrationAction" layoutX="400.0" layoutY="255.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="158.0" text="Cadastros" textFill="#000000">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

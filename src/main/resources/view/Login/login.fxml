@@ -36,7 +36,7 @@
       <PasswordField fx:id="senha" layoutX="270.0" layoutY="213.0" prefHeight="88.0" prefWidth="187.0" promptText="Senha" style="-fx-background-color: #E4E4E405; -fx-prompt-text-fill: #fffefe; -fx-font-weight: bold;">
          <font>
             <Font size="15.0" />
-   </font>
+         </font>
       </PasswordField>
 
 

@@ -9,12 +9,13 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Objects;
 
 public class Main extends Application {
 
     @FXML public Pane base;
-    @FXML public Button newLeaseAction;
+    @FXML public Button pedidoAction;
     @FXML public Button devolutionAction;
     @FXML public Button registrationAction;
 
@@ -34,6 +35,17 @@ public class Main extends Application {
         stage.setTitle("Sabor Caseiro");
         Image icon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/logo1.png")));
         stage.getIcons().add(icon);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.show();
+    }
+
+    public void pedidoAction() throws IOException {
+        Stage stage = (Stage) base.getScene().getWindow();
+        Scene scene = new Scene(
+                new FXMLLoader( getClass().getResource("/view/NewLease/pedido.fxml") ).load()
+        );
+        stage.setTitle("alugaCar");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();

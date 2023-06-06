@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PedidoController">
+    <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" smooth="false">
+      <image>
+         <Image url="@../../Images/teste.jpg" />
+      </image>
+    </ImageView>
+    <Button fx:id="selectClientAction" layoutX="21.0" layoutY="79.0" mnemonicParsing="false" onAction="#selectClientAction" prefHeight="32.0" prefWidth="190.0" text="Selecione o Cliente" textFill="#f68500">
+        <effect>
+          <ColorAdjust />
+        </effect>
+    </Button>
+   <Button fx:id="selectDateAction" disable="true" layoutX="21.0" layoutY="117.0" mnemonicParsing="false" onAction="#selectDateAction" prefHeight="32.0" prefWidth="190.0" text="Selecione as Datas" textFill="#f68500">
+      <effect>
+         <ColorAdjust />
+      </effect>
+   </Button>
+   <Button fx:id="selectCategoryAction" disable="true" layoutX="21.0" layoutY="157.0" mnemonicParsing="false" onAction="#selectCategoryAction" prefHeight="32.0" prefWidth="190.0" text="Selecione a Categoria" textFill="#f68500">
+      <effect>
+         <ColorAdjust />
+      </effect>
+   </Button>
+   <Button fx:id="selectCarAction" disable="true" layoutX="21.0" layoutY="196.0" mnemonicParsing="false" onAction="#selectCarAction" prefHeight="32.0" prefWidth="190.0" text="Selecione o Carro" textFill="#f68500">
+      <effect>
+         <ColorAdjust />
+      </effect>
+   </Button>
+   <Button fx:id="selectOptionalAction" disable="true" layoutX="21.0" layoutY="237.0" mnemonicParsing="false" onAction="#selectOptionalAction" prefHeight="32.0" prefWidth="190.0" text="Selecione os Opcionais" textFill="#f68500">
+      <effect>
+         <ColorAdjust />
+      </effect>
+   </Button>
+   <Button fx:id="selectCalculateFinancialAction" disable="true" layoutX="21.0" layoutY="277.0" mnemonicParsing="false" onAction="#selectCalculateFinancialAction" prefHeight="32.0" prefWidth="190.0" text="Calcular Financeiro" textFill="#f68500">
+      <effect>
+         <ColorAdjust />
+      </effect>
+   </Button>
+   <Button fx:id="selectAddFirstCourseAction" disable="true" layoutX="21.0" layoutY="317.0" mnemonicParsing="false" onAction="#selectAddFirstCourseAction" prefHeight="32.0" prefWidth="190.0" text="Adicionar Calção" textFill="#f68500">
+      <effect>
+         <ColorAdjust />
+      </effect>
+   </Button>
+   <Button fx:id="selectFinishAction" disable="true" layoutX="320.0" layoutY="365.0" mnemonicParsing="false" onAction="#selectFinishAction" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #F68500;" text="Finalizar" textFill="WHITE">
+      <effect>
+         <ColorAdjust />
+      </effect>
+   </Button>
+   <Button fx:id="backAction" layoutX="180.0" layoutY="365.0" mnemonicParsing="false" onAction="#backAction" prefHeight="20.0" prefWidth="100.0" text="Voltar">
+      <effect>
+         <ColorAdjust />
+      </effect>
+   </Button>
+   <TextField fx:id="fieldClient" disable="true" editable="false" layoutX="223.0" layoutY="79.0" prefHeight="32.0" prefWidth="359.0">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor></TextField>
+   <TextField fx:id="fieldDate" disable="true" editable="false" layoutX="223.0" layoutY="117.0" prefHeight="32.0" prefWidth="359.0">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor></TextField>
+   <TextField fx:id="fieldCategory" disable="true" editable="false" layoutX="223.0" layoutY="157.0" prefHeight="32.0" prefWidth="359.0">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor></TextField>
+   <TextField fx:id="fieldCar" disable="true" editable="false" layoutX="223.0" layoutY="196.0" prefHeight="32.0" prefWidth="359.0">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor></TextField>
+   <TextField fx:id="fieldOptional" disable="true" editable="false" layoutX="223.0" layoutY="237.0" prefHeight="32.0" prefWidth="359.0">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor></TextField>
+   <TextField fx:id="fieldFinancial" disable="true" editable="false" layoutX="223.0" layoutY="277.0" prefHeight="32.0" prefWidth="359.0">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor></TextField>
+   <TextField fx:id="fieldFirstCourse" disable="true" editable="false" layoutX="223.0" layoutY="317.0" prefHeight="32.0" prefWidth="359.0">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor></TextField>
+   <Label layoutX="238.0" layoutY="47.0" text="Novo Aluguel" textFill="WHITE">
+      <font>
+         <Font name="Arial" size="20.0" />
+      </font>
+   </Label>
+</Pane>
