@@ -1,7 +1,6 @@
 package Model;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "cardapio")
@@ -16,11 +15,7 @@ public class Cardapio {
     private String nome;
 
     @Column(nullable = false)
-    private Double valor;
-
-    @OneToMany
-    @JoinColumn(name = "cardapio_id")
-    private List<Prato> pratos;
+    private Double valor_pessoa;
 
     public Cardapio() {
     }
@@ -41,19 +36,11 @@ public class Cardapio {
         this.nome = nome;
     }
 
-    public Double getValor() {
-        return valor;
+    public Double getValorPessoa() {
+        return valor_pessoa;
     }
 
-    public void setValor(Double valor) {
-        this.valor = valor;
-    }
-
-    public List<Prato> getPratos() {
-        return pratos;
-    }
-
-    public void setPratos(List<Prato> pratos) {
-        this.pratos = pratos;
+    public void setValorPessoa(Double valor_pessoa) {
+        this.valor_pessoa = valor_pessoa;
     }
 }

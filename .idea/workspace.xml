@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AlterarUsuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PadraoDAO/PratosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PadraoDAO/PratosDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Contador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/PrimeiroFX.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/teste.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,6 +365,17 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cmd" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":rocket:Ajustes na Classe" />
     <MESSAGE value=":rocket: Novos Ajustes no projeto" />
@@ -387,7 +389,8 @@
     <MESSAGE value=":rocket: Alterando o código para fazer a remoção do cliente" />
     <MESSAGE value=":rocket: Adicionando o arquvio main no projeto." />
     <MESSAGE value=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto" />
+    <MESSAGE value=":arrow_up: Adicionando o javax.persistence.jar na libs" />
+    <option name="LAST_COMMIT_MESSAGE" value=":arrow_up: Adicionando o javax.persistence.jar na libs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
