@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Adicionando as views para ter uma base no projeto.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" afterDir="false" />
+    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Ajustando as views e criando um arquivo CadastroController para administrar todos os cadastros do projeto.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/NovoPrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/NovoPrato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ObterPratos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ObterPratos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/NewLease/pedido.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NovoPedido/novoPedido.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Records/client.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Records/client.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Registration/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Cadastros/cadastros.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ClienteJpaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ClienteJpaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/teste.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/teste.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Cadastros/cadastros.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Cadastros/cadastros.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,32 +69,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/joaom/OneDrive/Área de Trabalho/mysql-connector-j-8.0.32.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3816092&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_opened_file_path": "C:/Users/joaom/OneDrive/Área de Trabalho/mysql-connector-j-8.0.32.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3816092",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\java" />
@@ -277,7 +272,8 @@
       <workItem from="1685800764003" duration="8451000" />
       <workItem from="1685963804596" duration="1266000" />
       <workItem from="1686054276157" duration="6057000" />
-      <workItem from="1686076967347" duration="5938000" />
+      <workItem from="1686076967347" duration="6011000" />
+      <workItem from="1686134693833" duration="9768000" />
     </task>
     <task id="LOCAL-00001" summary=":rocket:Ajustes na Classe">
       <created>1684197201591</created>
@@ -426,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686080054727</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary=":rocket: Ajustando as views e criando um arquivo CadastroController para administrar todos os cadastros do projeto.">
+      <created>1686082982209</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1686082982209</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +471,8 @@
     <MESSAGE value=":rocket: Adicionando a coluna nos respectivos nomes." />
     <MESSAGE value=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco" />
     <MESSAGE value=":rocket: Adicionando as views para ter uma base no projeto." />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Adicionando as views para ter uma base no projeto." />
+    <MESSAGE value=":rocket: Ajustando as views e criando um arquivo CadastroController para administrar todos os cadastros do projeto." />
+    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Ajustando as views e criando um arquivo CadastroController para administrar todos os cadastros do projeto." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
