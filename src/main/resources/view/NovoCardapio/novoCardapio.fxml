@@ -10,10 +10,10 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DevolutionController">
+<Pane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CardapioController">
     <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" smooth="false">
         <image>
-            <Image url="@../../Images/devolution_screen.png" />
+            <Image url="@../../Images/teste.jpg" />
         </image>
     </ImageView>
     <Button fx:id="selectContract" layoutX="21.0" layoutY="79.0" mnemonicParsing="false" onAction="#selectContractAction" prefHeight="32.0" prefWidth="190.0" text="Informe o ID do contrato" textFill="#f68500">
