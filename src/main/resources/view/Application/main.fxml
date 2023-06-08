@@ -11,7 +11,7 @@
    <children>
       <ImageView pickOnBounds="true" smooth="false">
          <image>
-            <Image url="@../../Images/teste.jpg" />
+            <Image url="@../../Images/main.png" />
          </image>
       </ImageView>
       <Button fx:id="novoPedido" layoutX="43.0" layoutY="255.0" mnemonicParsing="false" onAction="#novoPedido" prefHeight="34.0" prefWidth="158.0" text="Novo Pedido" textFill="#000000">
@@ -22,7 +22,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="devolutionAction" layoutX="221.0" layoutY="255.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="158.0" text="Cardápios" textFill="#000000">
+      <Button fx:id="devolutionAction" layoutX="221.0" layoutY="255.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="158.0" text="Novo Cardápio" textFill="#000000">
          <effect>
             <ColorAdjust />
          </effect>
