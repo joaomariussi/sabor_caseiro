@@ -12,9 +12,9 @@
          <Image url="@../../Images/teste.jpg" />
       </image>
    </ImageView>
-    <Button fx:id="cadastroCliente" layoutX="350.0" layoutY="128.0" mnemonicParsing="false" onAction="#cadastroCliente" prefHeight="37.0" prefWidth="125.0" style="-fx-background-color: #ffffff;" text="Cadastrar Cliente" textFill="#000000">
+    <Button fx:id="cadastrarCliente" layoutX="350.0" layoutY="128.0" mnemonicParsing="false" onAction="#cadastrarCliente" prefHeight="37.0" prefWidth="125.0" style="-fx-background-color: #ffffff;" text="Cadastrar Cliente" textFill="#000000">
       <font>
          <Font size="14.0" />
       </font></Button>
-    <Button fx:id="backActionReg" layoutX="250.0" layoutY="326.0" mnemonicParsing="false"  prefHeight="35.0" prefWidth="101.0" text="Voltar" />
+    <Button fx:id="voltarCadastro" layoutX="250.0" layoutY="326.0" mnemonicParsing="false" onAction="#voltarCadastro"  prefHeight="35.0" prefWidth="101.0" text="Voltar" />
 </Pane>
