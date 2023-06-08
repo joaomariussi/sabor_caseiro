@@ -37,10 +37,7 @@ public class Cliente {
     private String estado;
 
     @Column(name = "data_nasc")
-    private Date data_nasc;
-
-    @Column(name = "genero")
-    private String genero;
+    private Date datanasc;
 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Pedido> pedidos;
@@ -49,7 +46,7 @@ public class Cliente {
 
     }
 
-    public Cliente(String nome, String cpf, String telefone, String endereco, String cep, String cidade, String estado, String data_nasc, String genero) {
+    public Cliente(String nome, String cpf, String telefone, String endereco, String cep, String cidade, String estado, String datanasc) {
         super();
         this.nome = nome;
         this.cpf = cpf;
@@ -58,11 +55,10 @@ public class Cliente {
         this.cep = cep;
         this.cidade = cidade;
         this.estado = estado;
-        this.genero = genero;
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         try {
-            this.data_nasc = formatter.parse(String.valueOf(data_nasc));
+            this.datanasc = formatter.parse(String.valueOf(datanasc));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -132,24 +128,16 @@ public class Cliente {
         this.estado = estado;
     }
 
-    public Date getData_nasc() {
-        return data_nasc;
+    public Date getDatanasc() {
+        return datanasc;
     }
 
-    public void setData_nasc(String data_nasc) {
+    public void setDatanasc(String datanasc) {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         try {
-            this.data_nasc = formatter.parse(data_nasc);
+            this.datanasc = formatter.parse(datanasc);
         } catch (ParseException e) {
             e.printStackTrace();
         }
-    }
-
-    public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
     }
 }
