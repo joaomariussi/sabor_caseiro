@@ -1,35 +1,49 @@
 package Controller;
 
+import DAO.ClienteJpaDao;
 import Model.Cliente;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.layout.GridPane;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import java.io.IOException;
 
 public class ClienteController {
 
-    public static void main(String[] args) {
+    private final ClienteJpaDao dao;
 
-        //Faz a inserção de um novo cliente
+    public Cliente clienteLocalizado;
 
-            try {
-                EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("sabor_caseiro");
-                EntityManager entityManager = entityManagerFactory.createEntityManager();
+    public GridPane base;
 
-                Cliente novoCliente = new Cliente("João", "01040688098", "54999957486", "Rua tal",
-                "9966000", "Campinas do Sul", "RS", "28/07/2001", "Masculino");
+    @FXML public javafx.scene.control.TextField id;
+    @FXML public javafx.scene.control.TextField nome;
+    @FXML public javafx.scene.control.TextField cpf;
+    @FXML public javafx.scene.control.TextField telefone;
+    @FXML public javafx.scene.control.TextField endereco;
+    @FXML public javafx.scene.control.TextField cep;
+    @FXML public javafx.scene.control.TextField cidade;
+    @FXML public javafx.scene.control.TextField estado;
+    @FXML public javafx.scene.control.TextField datanasc;
+    @FXML public javafx.scene.control.Button botaoSalvar;
 
-                entityManager.getTransaction().begin();
-                entityManager.persist(novoCliente);
-                entityManager.getTransaction().commit();
+    public ClienteController() {
+        this.dao = ClienteJpaDao.getInstance();
+    }
 
-                entityManager.close();
-                entityManagerFactory.close();
+    @FXML private void botaoSalvar(String action, Cliente cliente) throws IOException {
 
-                System.out.println("Cliente inserido com sucesso!");
+        cliente.setNome(String.valueOf(nome.getText()));
+        cliente.setCpf(String.valueOf(cpf.getText()));
+        cliente.setTelefone(String.valueOf(telefone.getText()));
+        cliente.setEndereco(String.valueOf(telefone.getText()));
+        cliente.setCep(String.valueOf(cep.getText()));
+        cliente.setCidade(String.valueOf(cidade.getText()));
+        cliente.setEstado(String.valueOf(estado.getText()));
+        cliente.setDatanasc(String.valueOf(datanasc.getText()));
+    }
 
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+
+    public void botaoSalvar(ActionEvent actionEvent) {
     }
 }
