@@ -63,12 +63,11 @@ public class ClienteJpaDao {
 
     /**
      * @param cpf |
-     * @return |
      */
-    public Cliente getByCpf(final String cpf) {
+    public void getByCpf(final String cpf) {
         Query query = entityManager.createQuery("SELECT c FROM Cliente c WHERE c.cpf = :cpf");
         query.setParameter("cpf", cpf);
-        return (Cliente) query.getSingleResult();
+        query.getSingleResult();
     }
 
     /**
@@ -76,8 +75,17 @@ public class ClienteJpaDao {
      */
 
     @SuppressWarnings("unchecked")
-    public List<Cliente> listarTodos() {
-        return entityManager.createQuery("FROM " + Cliente.class.getName()).getResultList();
+    public Cliente listarCpf(String cpf) {
+        EntityManager entityManager1 = getEntityManager();
+        Query query = entityManager.createQuery("SELECT c FROM Cliente c where c.cpf = :cpf");
+        query.setParameter("cpf", cpf);
+        List<Cliente> clientes = query.getResultList();
+
+        if (!clientes.isEmpty()) {
+            return clientes.get(0);
+        } else {
+            return null;
+        }
     }
 
     /**
@@ -94,26 +102,4 @@ public class ClienteJpaDao {
         }
         return cliente;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
