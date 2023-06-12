@@ -30,7 +30,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="cadastro" layoutX="400.0" layoutY="255.0" mnemonicParsing="false" onAction="#cadastro" prefHeight="34.0" prefWidth="158.0" text="Cadastros" textFill="#000000">
+      <Button fx:id="cadastrarCliente" layoutX="400.0" layoutY="255.0" mnemonicParsing="false" onAction="#cadastrarCliente" prefHeight="34.0" prefWidth="158.0" text="Novo Cliente" textFill="#000000">
          <effect>
             <ColorAdjust />
          </effect>
