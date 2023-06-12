@@ -110,18 +110,18 @@
         </GridPane.margin>
     </Button>
 
-    <Button fx:id="buttonRemoveAction" defaultButton="true" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="22" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
+    <Button fx:id="botaoExlcuir" defaultButton="true" prefHeight="20.0" prefWidth="100" onAction="#botaoExlcuir" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="22" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
         <GridPane.margin>
             <Insets bottom="25.0" />
         </GridPane.margin>
     </Button>
 
-    <Button fx:id="buttonSearchAction" defaultButton="true" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="22" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
+    <Button fx:id="botaoBuscar" defaultButton="true" prefHeight="20.0" prefWidth="100" onAction="#botaoBuscar" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="22" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
         <GridPane.margin>
             <Insets bottom="25.0" />
         </GridPane.margin>
     </Button>
-   <Button fx:id="buttonBackAction" prefHeight="20.0" prefWidth="90.0" text="Voltar" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="22" GridPane.valignment="BOTTOM" style="-fx-background-color: #000000;" textFill="#ffffff">
+   <Button fx:id="botaoVoltar" onAction="#botaoVoltar" prefHeight="20.0" prefWidth="90.0" text="Voltar" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="22" GridPane.valignment="BOTTOM" style="-fx-background-color: #000000;" textFill="#ffffff">
       <GridPane.margin>
          <Insets bottom="25.0" />
       </GridPane.margin></Button>
