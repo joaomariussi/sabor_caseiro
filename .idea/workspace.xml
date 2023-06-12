@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Ajustando as views e criando um arquivo CadastroController para administrar todos os cadastros do projeto.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Deletando os arquivos são necessários.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/NovoPrato.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ObterClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PratoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ObterPratos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/RemoverCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ClienteJpaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ClienteJpaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PratoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PratoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Cadastros/cadastros.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Cadastros/cadastros.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Records/attribute.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Outros/pratos.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Records/category.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Records/cliente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Outros/cliente.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Records/optional.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Records/vehicle.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Cadastros/cadastros.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Outros/cliente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NovoCliente/novoCliente.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,11 +108,11 @@
       <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources\Application" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\sabor_caseiro\src\main\resources\view\NovoCliente" />
+      <recent name="C:\sabor_caseiro\src\main\resources\view" />
       <recent name="C:\sabor_caseiro\src\main\resources" />
       <recent name="C:\sabor_caseiro\libs" />
       <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources\views\Application" />
-      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources\views" />
-      <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Views" />
@@ -217,6 +210,8 @@
       <workItem from="1686333041596" duration="11167000" />
       <workItem from="1686407713123" duration="4920000" />
       <workItem from="1686492761704" duration="2805000" />
+      <workItem from="1686578479681" duration="708000" />
+      <workItem from="1686609198252" duration="2203000" />
     </task>
     <task id="LOCAL-00001" summary=":rocket:Ajustes na Classe">
       <created>1684197201591</created>
@@ -372,7 +367,70 @@
       <option name="project" value="LOCAL" />
       <updated>1686082982209</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary=":rocket: Criando o botão para cadastrar pratos.">
+      <created>1686578593481</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686578593481</updated>
+    </task>
+    <task id="LOCAL-00024" summary=":rocket: Criando os botões do ClienteController">
+      <created>1686578673775</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686578673775</updated>
+    </task>
+    <task id="LOCAL-00025" summary=":rocket: Deletando os arquivos que não serão necessários.">
+      <created>1686578718218</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1686578718218</updated>
+    </task>
+    <task id="LOCAL-00026" summary=":rocket: Criando o controlador do PratoController.">
+      <created>1686578812168</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1686578812168</updated>
+    </task>
+    <task id="LOCAL-00027" summary=":rocket: Ajustando o ClienteJpaDao.">
+      <created>1686578884262</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1686578884262</updated>
+    </task>
+    <task id="LOCAL-00028" summary=":rocket: Criando a classe PratoJpaDao.java">
+      <created>1686578946624</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1686578946624</updated>
+    </task>
+    <task id="LOCAL-00029" summary=":rocket: Ajustando as views">
+      <created>1686579028430</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1686579028430</updated>
+    </task>
+    <task id="LOCAL-00030" summary=":rocket: Adicionando a imagem Main">
+      <created>1686579087099</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1686579087099</updated>
+    </task>
+    <task id="LOCAL-00031" summary=":rocket: Deletando os arquivos são necessários.">
+      <created>1686579160946</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1686579160946</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,12 +451,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":rocket:Ajustes na Classe" />
-    <MESSAGE value=":rocket: Novos Ajustes no projeto" />
-    <MESSAGE value=":rocket: Adicionando uma tela de teste" />
-    <MESSAGE value=":rocket: Adicionando o arquivo persistence.xml" />
-    <MESSAGE value=":rocket: Ajustes no Pedido.java" />
-    <MESSAGE value=":rocket: Testando a criação de uma tela com um Contador." />
     <MESSAGE value=":rocket: Criando a função que faz o cadastro de um novo cliente." />
     <MESSAGE value=":rocket: Criando os métodos do cliente e também fazendo a formatação de String data_nasc para Date." />
     <MESSAGE value=":rocket: Alterando a classe &quot;Pratos&quot; para &quot;Prato&quot;" />
@@ -415,7 +467,16 @@
     <MESSAGE value=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco" />
     <MESSAGE value=":rocket: Adicionando as views para ter uma base no projeto." />
     <MESSAGE value=":rocket: Ajustando as views e criando um arquivo CadastroController para administrar todos os cadastros do projeto." />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Ajustando as views e criando um arquivo CadastroController para administrar todos os cadastros do projeto." />
+    <MESSAGE value=":rocket: Criando o botão para cadastrar pratos." />
+    <MESSAGE value=":rocket: Criando os botões do ClienteController" />
+    <MESSAGE value=":rocket: Deletando os arquivos que não serão necessários." />
+    <MESSAGE value=":rocket: Criando o controlador do PratoController." />
+    <MESSAGE value=":rocket: Ajustando o ClienteJpaDao." />
+    <MESSAGE value=":rocket: Criando a classe PratoJpaDao.java" />
+    <MESSAGE value=":rocket: Ajustando as views" />
+    <MESSAGE value=":rocket: Adicionando a imagem Main" />
+    <MESSAGE value=":rocket: Deletando os arquivos são necessários." />
+    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Deletando os arquivos são necessários." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
