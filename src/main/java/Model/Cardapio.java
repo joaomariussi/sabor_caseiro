@@ -54,11 +54,9 @@ public class Cardapio {
         this.valor_pessoa = valor_pessoa;
     }
 
-    public List<PratosCardapio> getPratosCardapio() {
-        return pratosCardapio;
-    }
-
-    public void setPratosCardapio(List<PratosCardapio> pratosCardapio) {
-        this.pratosCardapio = pratosCardapio;
+    public void addPrato(String descPrato) {
+        PratosCardapio pc = new PratosCardapio();
+        pc.setDescPrato("asdfasdfafsdasdf");
+        pratosCardapio.add(pc);
     }
 }

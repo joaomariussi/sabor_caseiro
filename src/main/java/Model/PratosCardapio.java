@@ -44,12 +44,4 @@ public class PratosCardapio {
         this.desc_prato = desc_prato;
     }
 
-    public Cardapio getCardapio() {
-        return cardapio;
-    }
-
-    public void setCardapio(Cardapio cardapio) {
-        this.cardapio = cardapio;
-    }
-
 }
