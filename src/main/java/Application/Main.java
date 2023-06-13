@@ -46,7 +46,7 @@ public class Main extends Application {
         Scene scene = new Scene(
                 new FXMLLoader( getClass().getResource("/view/NovoPedido/novoPedido.fxml") ).load()
         );
-        stage.setTitle("Sabor Caseiro");
+        stage.setTitle("Novo Pedido");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
