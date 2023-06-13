@@ -16,27 +16,27 @@
             <Image url="@../../Images/teste.jpg" />
         </image>
     </ImageView>
-    <Button fx:id="selectContract" layoutX="21.0" layoutY="79.0" mnemonicParsing="false" onAction="#selectContractAction" prefHeight="32.0" prefWidth="190.0" text="Informe o ID do contrato" textFill="#f68500">
+    <Button fx:id="selectContract" layoutX="21.0" layoutY="79.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="190.0" text="Informe o ID do contrato" textFill="#f68500">
         <effect>
             <ColorAdjust />
         </effect>
     </Button>
-    <Button fx:id="selectDateAction" disable="true" layoutX="21.0" layoutY="117.0" mnemonicParsing="false" onAction="#selectDateAction" prefHeight="32.0" prefWidth="190.0" text="Data de devolução" textFill="#f68500">
+    <Button fx:id="selectDateAction" disable="true" layoutX="21.0" layoutY="117.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="190.0" text="Data de devolução" textFill="#f68500">
         <effect>
             <ColorAdjust />
         </effect>
     </Button>
-    <Button fx:id="selectValueAction" disable="true" layoutX="21.0" layoutY="157.0" mnemonicParsing="false" onAction="#selectValueAction" prefHeight="32.0" prefWidth="190.0" text="Valor a receber" textFill="#f68500">
+    <Button fx:id="selectValueAction" disable="true" layoutX="21.0" layoutY="157.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="190.0" text="Valor a receber" textFill="#f68500">
         <effect>
             <ColorAdjust />
         </effect>
     </Button>
-    <Button fx:id="selectFinishAction" disable="true" layoutX="320.0" layoutY="365.0" mnemonicParsing="false" onAction="#selectFinishAction" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #F68500;" text="Finalizar" textFill="WHITE">
+    <Button fx:id="selectFinishAction" disable="true" layoutX="320.0" layoutY="365.0" mnemonicParsing="false"  prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #F68500;" text="Finalizar" textFill="WHITE">
         <effect>
             <ColorAdjust />
         </effect>
     </Button>
-    <Button fx:id="backAction" layoutX="180.0" layoutY="365.0" mnemonicParsing="false" onAction="#backAction" prefHeight="20.0" prefWidth="100.0" text="Voltar">
+    <Button fx:id="backAction" layoutX="180.0" layoutY="365.0" mnemonicParsing="false"  prefHeight="20.0" prefWidth="100.0" text="Voltar">
         <effect>
             <ColorAdjust />
         </effect>
