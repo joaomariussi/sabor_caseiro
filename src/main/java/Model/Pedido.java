@@ -16,8 +16,8 @@ public class Pedido {
     @Column(name = "data_entrega")
     private Date data_entrega;
 
-    @Column(name = "valor")
-    private Double valor;
+    @Column(name = "valor_total")
+    private Double valor_total;
 
     @Column(name = "observacoes")
     private String observacoes;
@@ -27,15 +27,19 @@ public class Pedido {
     private Cliente cliente;
 
     @ManyToOne
+    @JoinColumn(name = "id_cardapio")
+    private Cardapio cardapio;
+
+    @ManyToOne
     @JoinColumn(name = "id_status_pedido")
     private StatusPedido statusPedido;
 
     public Pedido() {
     }
 
-    public Pedido(String data_entrega, Double valor, String observacoes) {
+    public Pedido(String data_entrega, Double valor_total, String observacoes) {
         super();
-        this.valor = valor;
+        this.valor_total = valor_total;
         this.observacoes = observacoes;
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
@@ -67,12 +71,12 @@ public class Pedido {
         }
     }
 
-    public Double getValor() {
-        return valor;
+    public Double getValorTotal() {
+        return valor_total;
     }
 
-    public void setValor(Double valor) {
-        this.valor = valor;
+    public void setValorTotal(Double valor_total) {
+        this.valor_total = valor_total;
     }
 
     public String getObservacoes() {
@@ -97,5 +101,13 @@ public class Pedido {
 
     public void setStatusPedido(StatusPedido statusPedido) {
         this.statusPedido = statusPedido;
+    }
+
+    public Cardapio getCardapio() {
+        return cardapio;
+    }
+
+    public void setCardapio(Cardapio cardapio) {
+        this.cardapio = cardapio;
     }
 }
