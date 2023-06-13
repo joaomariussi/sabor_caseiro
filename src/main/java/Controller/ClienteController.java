@@ -125,7 +125,7 @@ public class ClienteController {
     @FXML private void botaoExlcuir() throws IOException {
 
         try {
-            dao.removeById(Integer.parseInt(id.getText()));
+            dao.removerCliente(Integer.parseInt(id.getText()));
 
             JOptionPane.showMessageDialog(null,"O cliente foi removido com sucesso!");
             camposLimpos();
@@ -168,7 +168,7 @@ public class ClienteController {
         if (back == 1) {
             Stage stage = (Stage) base.getScene().getWindow();
             Scene scene = new Scene(
-                    new FXMLLoader( getClass().getResource("/view/Cadastros/cadastros.fxml") ).load()
+                    new FXMLLoader( getClass().getResource("/view/Application/main.fxml") ).load()
             );
             stage.setTitle("Sabor Caseiro");
             stage.setScene(scene);
