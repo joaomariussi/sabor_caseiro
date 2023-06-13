@@ -49,7 +49,7 @@ public class ClienteJpaDao {
      * @return |
      */
 
-    public void removeById(final int id) {
+    public void removerCliente(final int id) {
         try {
             Cliente cliente = getById(id);
             entityManager.getTransaction().begin();
