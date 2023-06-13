@@ -1,97 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.ColorAdjust?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:///C:/sabor_caseiro/src/main/resources/Images/teste.jpg');" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PedidoController">
+   <padding><Insets bottom="40" left="40" right="40" top="40" /></padding>
+   <columnConstraints>
+      <ColumnConstraints>
+      </ColumnConstraints>
+      <ColumnConstraints>
+      </ColumnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints halignment="RIGHT" maxWidth="Infinity" minWidth="100.0" prefWidth="120.0" />
+      <ColumnConstraints hgrow="ALWAYS" maxWidth="Infinity" minWidth="200.0" prefWidth="370.0" />
+   </columnConstraints>
 
-<Pane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PedidoController">
-    <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" smooth="false">
-      <image>
-         <Image url="@../../Images/teste.jpg" />
-      </image>
-    </ImageView>
-    <Button fx:id="selectClientAction" layoutX="21.0" layoutY="79.0" mnemonicParsing="false" onAction="#selectClientAction" prefHeight="32.0" prefWidth="190.0" text="Selecione o Cliente" textFill="#f68500">
-        <effect>
-          <ColorAdjust />
-        </effect>
-    </Button>
-   <Button fx:id="selectDateAction" disable="true" layoutX="21.0" layoutY="117.0" mnemonicParsing="false" onAction="#selectDateAction" prefHeight="32.0" prefWidth="190.0" text="Selecione as Datas" textFill="#f68500">
-      <effect>
-         <ColorAdjust />
-      </effect>
-   </Button>
-   <Button fx:id="selectCategoryAction" disable="true" layoutX="21.0" layoutY="157.0" mnemonicParsing="false" onAction="#selectCategoryAction" prefHeight="32.0" prefWidth="190.0" text="Selecione a Categoria" textFill="#f68500">
-      <effect>
-         <ColorAdjust />
-      </effect>
-   </Button>
-   <Button fx:id="selectCarAction" disable="true" layoutX="21.0" layoutY="196.0" mnemonicParsing="false" onAction="#selectCarAction" prefHeight="32.0" prefWidth="190.0" text="Selecione o Carro" textFill="#f68500">
-      <effect>
-         <ColorAdjust />
-      </effect>
-   </Button>
-   <Button fx:id="selectOptionalAction" disable="true" layoutX="21.0" layoutY="237.0" mnemonicParsing="false" onAction="#selectOptionalAction" prefHeight="32.0" prefWidth="190.0" text="Selecione os Opcionais" textFill="#f68500">
-      <effect>
-         <ColorAdjust />
-      </effect>
-   </Button>
-   <Button fx:id="selectCalculateFinancialAction" disable="true" layoutX="21.0" layoutY="277.0" mnemonicParsing="false" onAction="#selectCalculateFinancialAction" prefHeight="32.0" prefWidth="190.0" text="Calcular Financeiro" textFill="#f68500">
-      <effect>
-         <ColorAdjust />
-      </effect>
-   </Button>
-   <Button fx:id="selectAddFirstCourseAction" disable="true" layoutX="21.0" layoutY="317.0" mnemonicParsing="false" onAction="#selectAddFirstCourseAction" prefHeight="32.0" prefWidth="190.0" text="Adicionar Calção" textFill="#f68500">
-      <effect>
-         <ColorAdjust />
-      </effect>
-   </Button>
-   <Button fx:id="selectFinishAction" disable="true" layoutX="320.0" layoutY="365.0" mnemonicParsing="false" onAction="#selectFinishAction" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #F68500;" text="Finalizar" textFill="WHITE">
-      <effect>
-         <ColorAdjust />
-      </effect>
-   </Button>
-   <Button fx:id="backAction" layoutX="180.0" layoutY="365.0" mnemonicParsing="false" onAction="#backAction" prefHeight="20.0" prefWidth="100.0" text="Voltar">
-      <effect>
-         <ColorAdjust />
-      </effect>
-   </Button>
-   <TextField fx:id="fieldClient" disable="true" editable="false" layoutX="223.0" layoutY="79.0" prefHeight="32.0" prefWidth="359.0">
-      <cursor>
-         <Cursor fx:constant="DEFAULT" />
-      </cursor></TextField>
-   <TextField fx:id="fieldDate" disable="true" editable="false" layoutX="223.0" layoutY="117.0" prefHeight="32.0" prefWidth="359.0">
-      <cursor>
-         <Cursor fx:constant="DEFAULT" />
-      </cursor></TextField>
-   <TextField fx:id="fieldCategory" disable="true" editable="false" layoutX="223.0" layoutY="157.0" prefHeight="32.0" prefWidth="359.0">
-      <cursor>
-         <Cursor fx:constant="DEFAULT" />
-      </cursor></TextField>
-   <TextField fx:id="fieldCar" disable="true" editable="false" layoutX="223.0" layoutY="196.0" prefHeight="32.0" prefWidth="359.0">
-      <cursor>
-         <Cursor fx:constant="DEFAULT" />
-      </cursor></TextField>
-   <TextField fx:id="fieldOptional" disable="true" editable="false" layoutX="223.0" layoutY="237.0" prefHeight="32.0" prefWidth="359.0">
-      <cursor>
-         <Cursor fx:constant="DEFAULT" />
-      </cursor></TextField>
-   <TextField fx:id="fieldFinancial" disable="true" editable="false" layoutX="223.0" layoutY="277.0" prefHeight="32.0" prefWidth="359.0">
-      <cursor>
-         <Cursor fx:constant="DEFAULT" />
-      </cursor></TextField>
-   <TextField fx:id="fieldFirstCourse" disable="true" editable="false" layoutX="223.0" layoutY="317.0" prefHeight="32.0" prefWidth="359.0">
-      <cursor>
-         <Cursor fx:constant="DEFAULT" />
-      </cursor></TextField>
-   <Label layoutX="238.0" layoutY="47.0" text="Novo Aluguel" textFill="WHITE">
+   <Label style="-fx-font-weight: bold;" text="Novo Pedido" textFill="#000000" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="1">
       <font>
          <Font name="Arial" size="20.0" />
       </font>
+      <GridPane.margin>
+         <Insets bottom="20" top="20" />
+      </GridPane.margin>
    </Label>
-</Pane>
+
+   <Label contentDisplay="RIGHT" ellipsisString="" prefHeight="19.0" prefWidth="139.0" style="-fx-font-weight: bold;" text="Selecione o Cliente: " textFill="#000000" GridPane.columnIndex="3" GridPane.rowIndex="6">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Label>
+   <ChoiceBox fx:id="clienteChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="390.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="6">
+         <Font size="13.0" />
+      <!-- Insira aqui as opções do ChoiceBox -->
+   </ChoiceBox>
+
+   <Label ellipsisString="" prefHeight="19.0" prefWidth="154.0" style="-fx-font-weight: bold;" text="Data de Entrega: " textFill="#000000" GridPane.columnIndex="3" GridPane.rowIndex="23">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Label>
+   <DatePicker fx:id="dataNascimentoPicker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="381.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="23" />
+
+   <Label prefHeight="19.0" prefWidth="147.0" style="-fx-font-weight: bold;" text="Status do Pedido: " textFill="#000000" GridPane.columnIndex="3" GridPane.rowIndex="11">
+      <font>
+         <Font size="13.0" />
+      </font>
+   </Label>
+   <ChoiceBox fx:id="statusPedidoChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="390.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="11">
+         <Font size="14.0" />
+   </ChoiceBox>
+
+   <Label alignment="CENTER" depthTest="ENABLE" ellipsisString="" style="-fx-font-weight: bold;" text="Selecione o Cardápio:" textFill="#000000" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="13">
+      <font>
+         <Font size="13.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+   </Label>
+   <ChoiceBox fx:id="cardapioChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="390.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="13">
+         <Font size="13.0" />
+   </ChoiceBox>
+
+   <Label style="-fx-font-weight: bold;" text="Valor Total:  " textFill="#000000" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="24">
+      <font>
+         <Font size="13.0" />
+      </font></Label>
+   <TextField fx:id="datanasc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="385.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="24">
+      <font>
+         <Font size="13.0" />
+      </font></TextField>
+
+   <!-- Abaixo estão os botões do formulário -->
+   <Button fx:id="botaoSalvar" defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Salvar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="22" GridPane.rowSpan="2147483647" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+         <Insets bottom="25.0" />
+      </GridPane.margin>
+   </Button>
+
+   <Button fx:id="botaoExlcuir" defaultButton="true" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="24" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+         <Insets bottom="25.0" />
+      </GridPane.margin>
+   </Button>
+
+   <Button fx:id="botaoBuscar" defaultButton="true" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="24" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+         <Insets bottom="25.0" />
+      </GridPane.margin>
+   </Button>
+   <Button fx:id="botaoVoltar" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: #000000;" text="Voltar" textFill="#ffffff" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="24" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+         <Insets bottom="25.0" />
+      </GridPane.margin></Button>
+
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" />
+      <RowConstraints />
+      <RowConstraints minHeight="3.0" prefHeight="3.0" />
+      <RowConstraints />
+      <RowConstraints minHeight="3.0" prefHeight="3.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="3.0" prefHeight="3.0" />
+      <RowConstraints />
+      <RowConstraints minHeight="3.0" prefHeight="3.0" />
+      <RowConstraints />
+      <RowConstraints minHeight="3.0" prefHeight="3.0" />
+      <RowConstraints />
+      <RowConstraints minHeight="3.0" prefHeight="3.0" />
+      <RowConstraints />
+      <RowConstraints minHeight="3.0" prefHeight="3.0" />
+      <RowConstraints />
+      <RowConstraints minHeight="3.0" prefHeight="3.0" />
+      <RowConstraints />
+      <RowConstraints maxHeight="80.0" minHeight="70.0" prefHeight="80.0" />
+      <RowConstraints maxHeight="65.0" minHeight="60.0" prefHeight="60.0" />
+      <RowConstraints maxHeight="-Infinity" minHeight="70.0" />
+   </rowConstraints>
+
+</GridPane>
