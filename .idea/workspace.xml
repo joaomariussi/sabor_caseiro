@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Deletando os arquivos são necessários.">
+    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Tirando a view do diretório Cadastro e criando um novo diretório Novo Cliente.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/CardapioJpaDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PratoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PratoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ClienteJpaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ClienteJpaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/PratoJpaDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Cardapio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Cardapio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PratosCardapio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/PratosCardapio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Cadastros/cadastros.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Outros/cliente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NovoCliente/novoCliente.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/NovoCardapio/novoCardapio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NovoCardapio/novoCardapio.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Outros/pratos.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +216,7 @@
       <workItem from="1686407713123" duration="4920000" />
       <workItem from="1686492761704" duration="2805000" />
       <workItem from="1686578479681" duration="708000" />
-      <workItem from="1686609198252" duration="2203000" />
+      <workItem from="1686609198252" duration="7652000" />
     </task>
     <task id="LOCAL-00001" summary=":rocket:Ajustes na Classe">
       <created>1684197201591</created>
@@ -430,7 +435,35 @@
       <option name="project" value="LOCAL" />
       <updated>1686579160946</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary=":rocket: Adicionando o cadastro de cliente no meu arquivo main.">
+      <created>1686611612070</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1686611612070</updated>
+    </task>
+    <task id="LOCAL-00033" summary=":rocket: Colocando o método cadastrar Cliente na view principal.">
+      <created>1686611798653</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1686611798653</updated>
+    </task>
+    <task id="LOCAL-00034" summary=":rocket: Deletando arquivos que não serão necessários.">
+      <created>1686611841763</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1686611841763</updated>
+    </task>
+    <task id="LOCAL-00035" summary=":rocket: Tirando a view do diretório Cadastro e criando um novo diretório Novo Cliente.">
+      <created>1686611932412</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1686611932412</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,10 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":rocket: Criando a função que faz o cadastro de um novo cliente." />
-    <MESSAGE value=":rocket: Criando os métodos do cliente e também fazendo a formatação de String data_nasc para Date." />
-    <MESSAGE value=":rocket: Alterando a classe &quot;Pratos&quot; para &quot;Prato&quot;" />
-    <MESSAGE value=":rocket: Alterando o código para fazer a remoção do cliente" />
     <MESSAGE value=":rocket: Adicionando o arquvio main no projeto." />
     <MESSAGE value=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto" />
     <MESSAGE value=":arrow_up: Adicionando o javax.persistence.jar na libs" />
@@ -476,7 +505,11 @@
     <MESSAGE value=":rocket: Ajustando as views" />
     <MESSAGE value=":rocket: Adicionando a imagem Main" />
     <MESSAGE value=":rocket: Deletando os arquivos são necessários." />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Deletando os arquivos são necessários." />
+    <MESSAGE value=":rocket: Adicionando o cadastro de cliente no meu arquivo main." />
+    <MESSAGE value=":rocket: Colocando o método cadastrar Cliente na view principal." />
+    <MESSAGE value=":rocket: Deletando arquivos que não serão necessários." />
+    <MESSAGE value=":rocket: Tirando a view do diretório Cadastro e criando um novo diretório Novo Cliente." />
+    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Tirando a view do diretório Cadastro e criando um novo diretório Novo Cliente." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

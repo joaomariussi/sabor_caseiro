@@ -18,6 +18,7 @@ public class Main extends Application {
     @FXML public Button novoPedido;
     @FXML public Button devolutionAction;
     @FXML public Button cadastrarCliente;
+    @FXML public Button cadastrarCardapio;
 
     /**
      * @param args |
@@ -48,6 +49,16 @@ public class Main extends Application {
         stage.setTitle("Sabor Caseiro");
         stage.setScene(scene);
         stage.setResizable(false);
+        stage.show();
+    }
+
+    public void cadastrarCardapio() throws IOException {
+        Stage stage = (Stage) base.getScene().getWindow();
+        Scene scene = new Scene(
+                new FXMLLoader( getClass().getResource("/view/NovoCardapio/novoCardapio.fxml") ).load()
+        );
+        stage.setTitle("Cadastro de Cliente");
+        stage.setScene(scene);
         stage.show();
     }
 
