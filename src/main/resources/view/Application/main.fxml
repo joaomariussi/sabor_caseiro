@@ -38,5 +38,13 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
+   <Button fx:id="cadastrarPrato" layoutX="221.0" layoutY="315.0" mnemonicParsing="false" onAction="#cadastrarPrato" prefHeight="34.0" prefWidth="158.0" text="Novo Cardápio" textFill="#000000">
+      <effect>
+         <ColorAdjust />
+      </effect>
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
    </children>
 </Pane>
