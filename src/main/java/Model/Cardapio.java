@@ -1,7 +1,6 @@
 package Model;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "cardapio")
@@ -11,9 +10,6 @@ public class Cardapio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    @OneToMany(mappedBy = "cardapio")
-    private List<PratosCardapio> pratosCardapio;
 
     @Column(name = "nome")
     private String nome;
@@ -54,9 +50,4 @@ public class Cardapio {
         this.valor_pessoa = valor_pessoa;
     }
 
-    public void addPrato(String descPrato) {
-        PratosCardapio pc = new PratosCardapio();
-        pc.setDescPrato("asdfasdfafsdasdf");
-        pratosCardapio.add(pc);
-    }
 }
