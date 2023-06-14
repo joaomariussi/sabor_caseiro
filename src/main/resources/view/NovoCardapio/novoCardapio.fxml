@@ -34,7 +34,7 @@
             <Font size="13.0" />
         </font>
     </Label>
-    <TextField fx:id="estado" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="390.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="23">
+    <TextField fx:id="nome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="390.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="23">
         <font>
             <Font size="13.0" />
         </font>
@@ -45,26 +45,25 @@
             <Font size="13.0" />
         </font>
     </Label>
-    <TextField fx:id="datanasc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="390.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="28">
+    <TextField fx:id="valor_pessoa" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="390.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="28">
         <font>
             <Font size="13.0" />
         </font>
     </TextField>
 
     <!-- Abaixo estão os botões do formulário -->
-    <Button fx:id="botaoSalvar" defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Salvar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="26" GridPane.rowSpan="2147483647" GridPane.valignment="BOTTOM">
+    <Button fx:id="botaoSalvar" defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#botaoSalvar" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Salvar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="26" GridPane.rowSpan="2147483647" GridPane.valignment="BOTTOM">
         <GridPane.margin>
             <Insets bottom="25.0" />
         </GridPane.margin>
     </Button>
 
-    <Button fx:id="botaoExlcuir" defaultButton="true" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="30" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
+    <Button fx:id="botaoExlcuir" defaultButton="true" prefHeight="20.0" prefWidth="100" onAction="#botaoExlcuir" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="30" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
         <GridPane.margin>
             <Insets bottom="25.0" />
         </GridPane.margin>
     </Button>
-
-    <Button fx:id="botaoBuscar" defaultButton="true" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="30" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
+    <Button fx:id="botaoBuscar" defaultButton="true" prefHeight="20.0" prefWidth="100" onAction="#botaoBuscar" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="30" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
         <GridPane.margin>
             <Insets bottom="25.0" />
         </GridPane.margin>

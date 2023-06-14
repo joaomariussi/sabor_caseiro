@@ -30,7 +30,7 @@
             <Insets right="50.0" />
         </GridPane.margin>
     </Label>
-    <ChoiceBox fx:id="estadoChoiceBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="4.0" prefWidth="400.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="19" GridPane.valignment="BOTTOM">
+    <ChoiceBox fx:id="selecioneCardapio" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="4.0" prefWidth="400.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="19" GridPane.valignment="BOTTOM">
             <Font size="13.0" />
     </ChoiceBox>
     <Label style="-fx-font-weight: bold;" text="Descrição Prato:  " textFill="#000000" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="24">
