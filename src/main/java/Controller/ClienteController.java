@@ -18,8 +18,6 @@ public class ClienteController {
 
     private final ClienteJpaDao dao;
 
-    public Cliente clienteLocalizado;
-
     public GridPane base;
 
     @FXML
@@ -79,16 +77,7 @@ public class ClienteController {
         } else {
             dao.persist(cliente);
             JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso");
-
-            // Limpa os campos do formulário
-            nome.setText("");
-            cpf.setText("");
-            telefone.setText("");
-            endereco.setText("");
-            cep.setText("");
-            cidade.setText("");
-            estado.setText("");
-            datanasc.setText("");
+            camposLimpos();
         }
     }
 
@@ -103,10 +92,10 @@ public class ClienteController {
         if (result.isPresent()) {
             String cpfCliente = result.get();
 
-            Cliente clienteLocalizado = dao.listarCpf(cpfCliente); // Chame o método listarCpf
+            // Chama o método listarCpf
+            Cliente clienteLocalizado = dao.listarCpf(cpfCliente);
 
             if (clienteLocalizado != null) {
-                id.setText(String.valueOf(clienteLocalizado.getId()));
                 nome.setText(clienteLocalizado.getNome());
                 cpf.setText(clienteLocalizado.getCpf());
                 telefone.setText(clienteLocalizado.getTelefone());
@@ -119,22 +108,17 @@ public class ClienteController {
             }
         }
     }
-
-
-
     @FXML private void botaoExlcuir() throws IOException {
 
         try {
-            dao.removerCliente(Integer.parseInt(id.getText()));
-
-            JOptionPane.showMessageDialog(null,"O cliente foi removido com sucesso!");
+            String cpfCliente = cpf.getText();
+            dao.removerClientePorCPF(cpfCliente);
+            JOptionPane.showMessageDialog(null, "O cliente foi removido com sucesso!");
             camposLimpos();
         } catch (Throwable $e) {
             JOptionPane.showMessageDialog(null, $e.getMessage());
-
         }
     }
-
     private void camposLimpos() {
         nome.setText("");
         cpf.setText("");
@@ -144,11 +128,6 @@ public class ClienteController {
         cidade.setText("");
         estado.setText("");
         datanasc.setText("");
-    }
-
-    public Cliente buscaCpf(String cpf) {
-        dao.getByCpf(cpf);
-        return null;
     }
 
     /**
@@ -175,7 +154,4 @@ public class ClienteController {
             stage.show();
         }
     }
-
-
-
 }
