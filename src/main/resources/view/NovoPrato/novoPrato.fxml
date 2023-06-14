@@ -37,14 +37,14 @@
         <font>
             <Font size="13.0" />
         </font></Label>
-    <TextField fx:id="datanasc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="385.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="24">
+    <TextField fx:id="desc_prato" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="385.0" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="24">
         <font>
             <Font size="13.0" />
         </font></TextField>
 
 
     <!-- Abaixo estão os botões do formulário -->
-    <Button fx:id="botaoSalvar" defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Salvar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="25" GridPane.valignment="BOTTOM">
+    <Button fx:id="botaoSalvar" defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#botaoSalvar" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Salvar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="25" GridPane.valignment="BOTTOM">
         <GridPane.margin>
             <Insets bottom="25.0" />
         </GridPane.margin>
@@ -56,7 +56,7 @@
         </GridPane.margin>
     </Button>
 
-    <Button fx:id="botaoBuscar" defaultButton="true" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="25" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
+    <Button fx:id="botaoBuscar" defaultButton="true" prefHeight="20.0" prefWidth="100" onAction="#botaoBuscar" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="25" GridPane.rowSpan="1" GridPane.valignment="BOTTOM">
         <GridPane.margin>
             <Insets bottom="25.0" />
         </GridPane.margin>
