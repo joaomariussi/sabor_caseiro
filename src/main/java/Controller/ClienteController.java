@@ -103,6 +103,7 @@ public class ClienteController {
                 cep.setText(clienteLocalizado.getCep());
                 cidade.setText(clienteLocalizado.getCidade());
                 estado.setText(clienteLocalizado.getEstado());
+                datanasc.setText(String.valueOf(clienteLocalizado.getDatanasc()));
             } else {
                 JOptionPane.showMessageDialog(null, "Nenhum cliente localizado com esse CPF!");
             }
