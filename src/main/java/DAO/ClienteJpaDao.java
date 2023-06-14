@@ -64,10 +64,32 @@ public class ClienteJpaDao {
     /**
      * @param cpf |
      */
-    public void getByCpf(final String cpf) {
+
+    public void removerClientePorCPF(String cpf) {
+        // Realize uma busca pelo cliente no banco de dados usando o CPF fornecido
+        Cliente cliente = buscarClientePorCPF(cpf);
+
+        // Verifica se o cliente foi encontrado
+        if (cliente != null) {
+
+            // Caso tenha sido encontrado, remova-o usando o ID
+            int idCliente = cliente.getId();
+            removerCliente(idCliente);
+        } else {
+            throw new RuntimeException("Cliente não encontrado.");
+        }
+    }
+
+    public Cliente buscarClientePorCPF(String cpf) {
         Query query = entityManager.createQuery("SELECT c FROM Cliente c WHERE c.cpf = :cpf");
         query.setParameter("cpf", cpf);
-        query.getSingleResult();
+        List<Cliente> clientes = query.getResultList();
+
+        if (!clientes.isEmpty()) {
+            return clientes.get(0);
+        } else {
+            return null;
+        }
     }
 
     /**

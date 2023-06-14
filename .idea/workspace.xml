@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Tirando a view do diretório Cadastro e criando um novo diretório Novo Cliente.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/CardapioJpaDao.java" afterDir="false" />
+    <list default="true" id="5e32e921-b8f9-47ed-8012-f98532a39ff8" name="Changes" comment=":rocket: Ajustes nas Views.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CadastroController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CardapioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CardapioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ClienteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PratoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/PratoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/CardapioJpaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/CardapioJpaDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ClienteJpaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/ClienteJpaDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/PratoJpaDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Cardapio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Cardapio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PratosCardapio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/PratosCardapio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/PratoJpaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/PratoJpaDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Application/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/NovoCardapio/novoCardapio.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NovoCardapio/novoCardapio.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Outros/pratos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/NovoPrato/novoPrato.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NovoPrato/novoPrato.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,32 +74,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/jar_files&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3816092&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_opened_file_path": "C:/Users/joaom/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Scene Builder/SceneBuilder.lnk",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3816092",
+    "settings.editor.selected.configurable": "preferences.JavaFX",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\joaom\OneDrive\Área de Trabalho\sabor_caseiro\src\main\java" />
@@ -217,6 +213,8 @@
       <workItem from="1686492761704" duration="2805000" />
       <workItem from="1686578479681" duration="708000" />
       <workItem from="1686609198252" duration="7652000" />
+      <workItem from="1686652324362" duration="610000" />
+      <workItem from="1686695642943" duration="11348000" />
     </task>
     <task id="LOCAL-00001" summary=":rocket:Ajustes na Classe">
       <created>1684197201591</created>
@@ -463,7 +461,56 @@
       <option name="project" value="LOCAL" />
       <updated>1686611932412</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary=":rocket: Adicionando o botão cadastrarCardapio em meu arquivo main">
+      <created>1686652421111</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1686652421111</updated>
+    </task>
+    <task id="LOCAL-00037" summary=":rocket: Excluindo o CadastroController.java, não vai mais ser utilizado.">
+      <created>1686652539022</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1686652539022</updated>
+    </task>
+    <task id="LOCAL-00038" summary=":rocket: Criando um novo arquivo CardapioJpaDao.">
+      <created>1686652599412</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1686652599412</updated>
+    </task>
+    <task id="LOCAL-00039" summary=":rocket: Excluindo PratoJpaDao.java, não vai mais ser utilizado.&#10;&#10;Ajustando o nome da função removerCliente.">
+      <created>1686652722307</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1686652722307</updated>
+    </task>
+    <task id="LOCAL-00040" summary=":rocket: Ajustes nas Models.">
+      <created>1686652768750</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1686652768750</updated>
+    </task>
+    <task id="LOCAL-00041" summary=":rocket: Excluindo a view que não terá necessidade.">
+      <created>1686652827671</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1686652827671</updated>
+    </task>
+    <task id="LOCAL-00042" summary=":rocket: Ajustes nas Views.">
+      <created>1686652864466</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1686652864466</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,13 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":rocket: Adicionando o arquvio main no projeto." />
-    <MESSAGE value=":rocket: Adicionando os arquivos restantes que estavam faltando no projeto" />
-    <MESSAGE value=":arrow_up: Adicionando o javax.persistence.jar na libs" />
-    <MESSAGE value=":rocket: Ajustando a model Cardapio" />
-    <MESSAGE value=":rocket: Fazendo o mapeamento da tabela Cardapio com a tabela PratosCardapio." />
-    <MESSAGE value=":truck: Renomeando os arquivos de forma correta." />
-    <MESSAGE value=":rocket: Fazendo o mapeamento da tabela PratosCardapio com a tabela Cardapio." />
     <MESSAGE value=":fire: Deletando os arquivos DAO para implementar novos." />
     <MESSAGE value=":rocket: Adicionando a coluna nos respectivos nomes." />
     <MESSAGE value=":rocket: Criando uma classe ClienteJpaDao para fazer a ligação no banco" />
@@ -509,7 +549,14 @@
     <MESSAGE value=":rocket: Colocando o método cadastrar Cliente na view principal." />
     <MESSAGE value=":rocket: Deletando arquivos que não serão necessários." />
     <MESSAGE value=":rocket: Tirando a view do diretório Cadastro e criando um novo diretório Novo Cliente." />
-    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Tirando a view do diretório Cadastro e criando um novo diretório Novo Cliente." />
+    <MESSAGE value=":rocket: Adicionando o botão cadastrarCardapio em meu arquivo main" />
+    <MESSAGE value=":rocket: Excluindo o CadastroController.java, não vai mais ser utilizado." />
+    <MESSAGE value=":rocket: Criando um novo arquivo CardapioJpaDao." />
+    <MESSAGE value=":rocket: Excluindo PratoJpaDao.java, não vai mais ser utilizado.&#10;&#10;Ajustando o nome da função removerCliente." />
+    <MESSAGE value=":rocket: Ajustes nas Models." />
+    <MESSAGE value=":rocket: Excluindo a view que não terá necessidade." />
+    <MESSAGE value=":rocket: Ajustes nas Views." />
+    <option name="LAST_COMMIT_MESSAGE" value=":rocket: Ajustes nas Views." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
