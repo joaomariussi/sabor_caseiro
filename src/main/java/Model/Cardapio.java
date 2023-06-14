@@ -50,4 +50,9 @@ public class Cardapio {
         this.valor_pessoa = valor_pessoa;
     }
 
+    @Override
+    public String toString() {
+        return nome;
+    }
+
 }

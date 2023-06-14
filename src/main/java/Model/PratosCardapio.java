@@ -16,7 +16,7 @@ public class PratosCardapio {
     private String desc_prato;
 
     @ManyToOne
-    @JoinColumn(name = "id_cardapio")
+    @JoinColumn(name = "id_cardapio", referencedColumnName = "id")
     private Cardapio cardapio;
 
     public PratosCardapio() {
@@ -44,4 +44,11 @@ public class PratosCardapio {
         this.desc_prato = desc_prato;
     }
 
+    public void setCardapio(Cardapio cardapio) {
+        this.cardapio = cardapio;
+    }
+
+    public Cardapio getCardapio() {
+        return cardapio;
+    }
 }
