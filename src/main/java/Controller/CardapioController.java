@@ -20,6 +20,7 @@ public class CardapioController {
     private final CardapioJpaDao dao;
 
     public GridPane base;
+
     @FXML
     public javafx.scene.control.TextField id;
     @FXML
