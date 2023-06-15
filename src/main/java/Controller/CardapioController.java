@@ -59,7 +59,6 @@ public class CardapioController {
             camposLimpos();
         }
     }
-
     @FXML private void botaoBuscar() {
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Buscar Cardápio");
@@ -114,6 +113,7 @@ public class CardapioController {
      *
      * @throws IOException |
      */
+
     public void botaoVoltar() throws IOException {
         Object[] opcoes = { "Cancelar", "Confirmar" };
         int back = JOptionPane.showOptionDialog(
