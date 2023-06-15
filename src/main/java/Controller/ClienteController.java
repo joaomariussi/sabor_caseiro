@@ -6,12 +6,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import javax.swing.*;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Optional;
 
 public class ClienteController {
@@ -46,9 +49,6 @@ public class ClienteController {
     public javafx.scene.control.Button botaoExlcuir;
     @FXML
     public javafx.scene.control.Button botaoBuscar;
-    @FXML
-    public javafx.scene.control.Button buscaCpf;
-
 
     public ClienteController() {
         this.dao = ClienteJpaDao.getInstance();
@@ -81,8 +81,7 @@ public class ClienteController {
         }
     }
 
-    @FXML
-    private void botaoBuscar() {
+    @FXML private void botaoBuscar() {
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Buscar Cliente");
         dialog.setHeaderText(null);
@@ -95,6 +94,7 @@ public class ClienteController {
             // Chama o método listarCpf
             Cliente clienteLocalizado = dao.listarCpf(cpfCliente);
 
+            //Adiciona os dados do cliente nos campos da view
             if (clienteLocalizado != null) {
                 nome.setText(clienteLocalizado.getNome());
                 cpf.setText(clienteLocalizado.getCpf());
@@ -104,6 +104,11 @@ public class ClienteController {
                 cidade.setText(clienteLocalizado.getCidade());
                 estado.setText(clienteLocalizado.getEstado());
                 datanasc.setText(String.valueOf(clienteLocalizado.getDatanasc()));
+
+                //Formata a data de nascimento para o padrão "dd/MM/yyyy"
+                SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                String dataNascimento = dateFormat.format(clienteLocalizado.getDatanasc());
+                datanasc.setText(dataNascimento);
             } else {
                 JOptionPane.showMessageDialog(null, "Nenhum cliente localizado com esse CPF!");
             }
@@ -111,15 +116,38 @@ public class ClienteController {
     }
     @FXML private void botaoExlcuir() throws IOException {
 
-        try {
-            String cpfCliente = cpf.getText();
-            dao.removerClientePorCPF(cpfCliente);
-            JOptionPane.showMessageDialog(null, "O cliente foi removido com sucesso!");
-            camposLimpos();
-        } catch (Throwable $e) {
-            JOptionPane.showMessageDialog(null, $e.getMessage());
+        //Caixa de diálogo para o usuário escolher Sim ou Não.
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirmação");
+        alert.setHeaderText(null);
+        alert.setContentText("Deseja realmente excluir esse cliente?");
+
+        ButtonType buttonTypeSim = new ButtonType("Sim");
+        ButtonType buttonTypeNao = new ButtonType("Não");
+
+        alert.getButtonTypes().setAll(buttonTypeNao, buttonTypeSim);
+
+        //Se a opção for SIM, o cliente é excluído.
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.isPresent() && result.get() == buttonTypeSim) {
+            Stage stage = (Stage) base.getScene().getWindow();
+            Scene scene = new Scene(new FXMLLoader(getClass().getResource("/view/novoCliente/novoCliente.fxml")).load());
+            stage.setTitle("Sabor Caseiro");
+            stage.setScene(scene);
+            stage.show();
+
+            try {
+                String cpfCliente = cpf.getText();
+                dao.removerClientePorCPF(cpfCliente);
+                JOptionPane.showMessageDialog(null, "O cliente foi removido com sucesso!");
+                camposLimpos();
+            } catch (Throwable $e) {
+                JOptionPane.showMessageDialog(null, $e.getMessage());
+            }
         }
     }
+
+    //Limpa os campos do formulário
     private void camposLimpos() {
         nome.setText("");
         cpf.setText("");
