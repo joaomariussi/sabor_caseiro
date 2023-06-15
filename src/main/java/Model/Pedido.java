@@ -110,4 +110,14 @@ public class Pedido {
     public void setCardapio(Cardapio cardapio) {
         this.cardapio = cardapio;
     }
+
+    public Double calcularValorTotal() {
+        if (cardapio != null) {
+            return cardapio.getValorPessoa();
+        }
+        return 0.0;
+    }
+
+    public void setStatusPedido(String statusPedido) {
+    }
 }
