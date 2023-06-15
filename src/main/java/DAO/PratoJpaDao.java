@@ -67,6 +67,23 @@ public class PratoJpaDao {
     }
 
     /**
+     *
+     * @param id |
+     */
+
+    public void removerPrato(final int id) {
+        try {
+            PratosCardapio pratosCardapio = getById(id);
+            entityManager.getTransaction().begin();
+            entityManager.remove(pratosCardapio);
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            entityManager.getTransaction().rollback();
+        }
+    }
+
+    /**
      * @param pratosCardapio |
      */
     public PratosCardapio persist(PratosCardapio pratosCardapio) {
