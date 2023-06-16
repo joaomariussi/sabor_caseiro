@@ -95,9 +95,10 @@ public class PratoController {
         });
     }
 
-    //Limpa o campo da descrição do prato
+    //Limpa os campos do formulário
     private void camposLimpos() {
         desc_prato.setText("");
+        selecioneCardapio.setValue(null);
     }
 
     public void botaoVoltar() throws IOException {
