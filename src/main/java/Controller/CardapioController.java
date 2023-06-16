@@ -60,6 +60,7 @@ public class CardapioController {
         }
     }
     @FXML private void botaoBuscar() {
+
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Buscar Cardápio");
         dialog.setHeaderText(null);
