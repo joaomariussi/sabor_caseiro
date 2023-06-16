@@ -5,6 +5,8 @@ import Model.Cardapio;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
+import java.util.List;
 
 public class CardapioJpaDao {
 
@@ -64,6 +66,20 @@ public class CardapioJpaDao {
         } catch (Exception e) {
             e.printStackTrace();
             entityManager.getTransaction().rollback();
+        }
+    }
+
+    public Cardapio existeCardapio(int id) {
+
+        EntityManager entityManager1 = getEntityManager();
+        Query query = entityManager.createQuery("SELECT c FROM Cardapio c where c.id = :id");
+        query.setParameter("id", id);
+        List<Cardapio> cardapios = query.getResultList();
+
+        if (!cardapios.isEmpty()) {
+            return cardapios.get(0);
+        } else {
+            return null;
         }
     }
 
