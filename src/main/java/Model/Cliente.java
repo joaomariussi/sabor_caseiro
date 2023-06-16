@@ -140,4 +140,8 @@ public class Cliente {
             e.printStackTrace();
         }
     }
+    @Override
+    public String toString() {
+        return nome;
+    }
 }

@@ -1,9 +1,9 @@
 package Model;
 
 import javax.persistence.*;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.DateTimeException;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "pedidos")
@@ -14,7 +14,7 @@ public class Pedido {
     private Integer id;
 
     @Column(name = "data_entrega")
-    private Date data_entrega;
+    private LocalDate data_entrega;
 
     @Column(name = "valor_total")
     private Double valor_total;
@@ -27,7 +27,7 @@ public class Pedido {
     private Cliente cliente;
 
     @ManyToOne
-    @JoinColumn(name = "id_cardapio")
+    @JoinColumn(name = "id_cardapio", referencedColumnName = "id")
     private Cardapio cardapio;
 
     @ManyToOne
@@ -44,8 +44,8 @@ public class Pedido {
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         try {
-            this.data_entrega = formatter.parse(String.valueOf(data_entrega));
-        } catch (ParseException e) {
+            this.data_entrega = LocalDate.parse(data_entrega);
+        } catch (DateTimeException e) {
             e.printStackTrace();
         }
     }
@@ -58,17 +58,12 @@ public class Pedido {
         this.id = id;
     }
 
-    public Date getData_entrega() {
+    public LocalDate getData_entrega() {
         return data_entrega;
     }
 
-    public void setData_entrega(String data_entrega) {
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-        try {
-            this.data_entrega = formatter.parse(data_entrega);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+    public void setData_entrega(LocalDate data_entrega) {
+        this.data_entrega = data_entrega;
     }
 
     public Double getValorTotal() {
