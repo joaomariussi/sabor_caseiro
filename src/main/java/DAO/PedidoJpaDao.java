@@ -102,6 +102,7 @@ public class PedidoJpaDao {
         }
     }
 
+
     public Pedido persist(Pedido pedido) {
         try {
             entityManager.getTransaction().begin();

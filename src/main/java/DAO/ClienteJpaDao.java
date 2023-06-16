@@ -113,7 +113,7 @@ public class ClienteJpaDao {
     /**
      * @param cliente |
      */
-    public Cliente persist(Cliente cliente) {
+    public void persist(Cliente cliente) {
         try {
             entityManager.getTransaction().begin();
             entityManager.merge(cliente);
@@ -122,7 +122,6 @@ public class ClienteJpaDao {
             ex.printStackTrace();
             entityManager.getTransaction().rollback();
         }
-        return cliente;
     }
 
     public List<Cliente> getAllClientes() {
