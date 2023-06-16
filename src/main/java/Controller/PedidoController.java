@@ -152,6 +152,28 @@ public class PedidoController {
             }
         }
     }
+    @FXML private void botaoExlcuir() {
+
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle("Excluir Pedido");
+        dialog.setHeaderText(null);
+        dialog.setContentText("Digite o ID do Pedido que deseja excluir:");
+
+        Optional<String> result = dialog.showAndWait();
+        result.ifPresent(idPedido -> {
+            try {
+                int id = Integer.parseInt(idPedido);
+                dao.removerPedido(id);
+                JOptionPane.showMessageDialog(null, "Pedido removido com sucesso!");
+                camposLimpos();
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "ID inválido. Digite um número válido!");
+            } catch (Throwable t) {
+                JOptionPane.showMessageDialog(null, "Ocorreu um erro ao excluir o pedido.");
+                t.printStackTrace();
+            }
+        });
+    }
 
     //limpa os campos do formulário
     private void camposLimpos() {

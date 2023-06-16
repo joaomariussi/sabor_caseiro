@@ -80,9 +80,9 @@ public class PratoController {
         dialog.setContentText("Digite o ID do Prato que deseja excluir:");
 
         Optional<String> result = dialog.showAndWait();
-        result.ifPresent(idCardapio -> {
+        result.ifPresent(idPrato -> {
             try {
-                int id = Integer.parseInt(idCardapio);
+                int id = Integer.parseInt(idPrato);
                 dao.removerPrato(id);
                 JOptionPane.showMessageDialog(null, "Prato removido com sucesso!");
                 camposLimpos();
