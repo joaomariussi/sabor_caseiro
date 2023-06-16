@@ -8,52 +8,59 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="base" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:///C:/sabor_caseiro/src/main/resources/Images/teste.jpg');" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PedidoController">
+<AnchorPane fx:id="base" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:///C:/sabor_caseiro/src/main/resources/Images/teste.jpg');" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PedidoController">
    <children>
-      <Label layoutX="177.0" layoutY="92.0" style="-fx-font-weight: bold;" text="Novo Pedido">
+      <Label layoutX="177.0" layoutY="89.0" style="-fx-font-weight: bold;" text="Novo Pedido">
          <font>
             <Font name="Arial" size="20.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="selecioneCliente" layoutX="133.0" layoutY="143.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="239.0" />
-      <Label ellipsisString="" layoutX="2.0" layoutY="147.0" prefHeight="19.0" prefWidth="124.0" style="-fx-font-weight: bold;" text="Selecione o Cliente:">
+      <ChoiceBox fx:id="selecioneCliente" layoutX="133.0" layoutY="123.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="239.0" />
+      <Label ellipsisString="" layoutX="2.0" layoutY="127.0" prefHeight="19.0" prefWidth="124.0" style="-fx-font-weight: bold;" text="Selecione o Cliente:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label ellipsisString="" layoutX="2.0" layoutY="299.0" prefHeight="19.0" prefWidth="108.0" style="-fx-font-weight: bold;" text="Data de Entrega:">
+      <Label ellipsisString="" layoutX="2.0" layoutY="319.0" prefHeight="19.0" prefWidth="108.0" style="-fx-font-weight: bold;" text="Data de Entrega:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <DatePicker fx:id="data_entrega" layoutX="132.0" layoutY="295.0" prefHeight="26.0" prefWidth="246.0" />
+      <DatePicker fx:id="data_entrega" layoutX="132.0" layoutY="315.0" prefHeight="26.0" prefWidth="246.0" />
 
-      <Label alignment="TOP_LEFT" layoutX="3.0" layoutY="191.0" style="-fx-font-weight: bold;" text="Status do Pedido:" textOverrun="CLIP">
+      <Label alignment="TOP_LEFT" layoutX="1.0" layoutY="171.0" style="-fx-font-weight: bold;" text="Status do Pedido:" textOverrun="CLIP">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="selecioneStatus" layoutX="133.0" layoutY="185.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="239.0" />
+      <ChoiceBox fx:id="selecioneStatus" layoutX="133.0" layoutY="165.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="239.0" />
 
-      <Label alignment="TOP_RIGHT" contentDisplay="CENTER" ellipsisString="" layoutX="3.0" layoutY="231.0" style="-fx-font-weight: bold;" text="Selecione o Cardápio:" textOverrun="CENTER_WORD_ELLIPSIS">
+      <Label alignment="TOP_RIGHT" contentDisplay="CENTER" ellipsisString="" layoutY="211.0" style="-fx-font-weight: bold;" text="Selecione o Cardápio:" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="selecioneCardapio" layoutX="133.0" layoutY="226.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="239.0" />
-      <Label alignment="TOP_RIGHT" contentDisplay="CENTER" ellipsisString="" layoutX="2.0" layoutY="264.0" style="-fx-font-weight: bold;" text="Valor Total:" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+      <ChoiceBox fx:id="selecioneCardapio" layoutX="133.0" layoutY="206.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="239.0" />
+      <Label alignment="TOP_RIGHT" contentDisplay="CENTER" ellipsisString="" layoutX="2.0" layoutY="284.0" style="-fx-font-weight: bold;" text="Valor Total:" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="valor_total" layoutX="132.0" layoutY="261.0" />
+      <TextField fx:id="valor_total" layoutX="132.0" layoutY="281.0" />
 
-      <Button fx:id="botaoExlcuir" defaultButton="true" layoutX="452.0" layoutY="352.0" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" />
+      <Button fx:id="botaoExlcuir" defaultButton="true" layoutX="452.0" layoutY="362.0" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" />
 
-      <Button fx:id="botaoBuscar" defaultButton="true" layoutX="307.0" layoutY="352.0" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" />
+      <Button fx:id="botaoBuscar" defaultButton="true" layoutX="307.0" layoutY="362.0" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" />
 
-      <Button fx:id="botaoSalvar" onAction="#botaoSalvar" defaultButton="true" layoutX="163.0" layoutY="352.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #873100;" text="Salvar" textFill="WHITE" />
+      <Button fx:id="botaoSalvar" defaultButton="true" layoutX="163.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#botaoSalvar" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #873100;" text="Salvar" textFill="WHITE" />
 
-      <Button fx:id="botaoVoltar" layoutX="32.0" layoutY="352.0" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: #000000;" text="Voltar" textFill="#ffffff" />
+      <Button fx:id="botaoVoltar" layoutX="32.0" layoutY="362.0" onAction="#botaoVoltar" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: #000000;" text="Voltar" textFill="#ffffff" />
+
+      <Label layoutX="1.0" layoutY="246.0" style="-fx-font-weight: bold;" text="Observações:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="observacoes" layoutX="132.0" layoutY="243.0" />
    </children>
 </AnchorPane>
