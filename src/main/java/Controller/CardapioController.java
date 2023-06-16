@@ -2,7 +2,6 @@ package Controller;
 
 import DAO.CardapioJpaDao;
 import Model.Cardapio;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -40,7 +39,7 @@ public class CardapioController {
         this.dao = CardapioJpaDao.getInstance();
     }
 
-    @FXML private void botaoSalvar(ActionEvent actionEvent) throws IOException {
+    @FXML private void botaoSalvar() {
 
         Cardapio cardapio = new Cardapio();
 
@@ -82,7 +81,7 @@ public class CardapioController {
         }
     }
 
-    @FXML private void botaoExlcuir() throws IOException {
+    @FXML private void botaoExlcuir() {
 
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Excluir Cardápio");
@@ -93,9 +92,15 @@ public class CardapioController {
         result.ifPresent(idCardapio -> {
             try {
                 int id = Integer.parseInt(idCardapio);
-                dao.removerCardapio(id);
-                JOptionPane.showMessageDialog(null, "Cardápio removido com sucesso!");
-                camposLimpos();
+                Cardapio cardapio = dao.existeCardapio(id); // Verifica se o ID do cardápio existe. Se existe, cai no primeiro else.
+
+                if (cardapio != null) {
+                    dao.removerCardapio(id);
+                    JOptionPane.showMessageDialog(null, "Cardápio removido com sucesso!");
+                    camposLimpos();
+                } else {
+                    JOptionPane.showMessageDialog(null, "O ID do cardápio não existe!");
+                }
             } catch (NumberFormatException e) {
                 JOptionPane.showMessageDialog(null, "ID inválido. Digite um número válido!");
             } catch (Throwable t) {
@@ -104,6 +109,7 @@ public class CardapioController {
             }
         });
     }
+
 
     private void camposLimpos() {
         nome.setText("");
