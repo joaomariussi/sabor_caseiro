@@ -8,13 +8,12 @@ import Model.StatusPedido;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
 import java.util.List;
 
 public class PedidoJpaDao {
 
     private static PedidoJpaDao instance;
-    private EntityManagerFactory entityManagerFactory;
+
     protected EntityManager entityManager;
 
     public static PedidoJpaDao getInstance() {
@@ -25,9 +24,56 @@ public class PedidoJpaDao {
     }
 
     private PedidoJpaDao() {
-        entityManagerFactory = Persistence.createEntityManagerFactory("sabor_caseiro");
-        entityManager = entityManagerFactory.createEntityManager();
+        entityManager = getEntityManager();
     }
+
+    private EntityManager getEntityManager() {
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("sabor_caseiro");
+        if (entityManager == null) {
+            entityManager = factory.createEntityManager();
+        }
+        return entityManager;
+    }
+
+    public List<Cliente> getAllClientes() {
+        try {
+            entityManager.getTransaction().begin();
+            List<Cliente> clientes = entityManager.createQuery("SELECT c FROM Cliente c", Cliente.class).getResultList();
+            entityManager.getTransaction().commit();
+            return clientes;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            entityManager.getTransaction().rollback();
+            return null;
+        }
+    }
+
+    public List<StatusPedido> getAllStatusPedido() {
+        try {
+            entityManager.getTransaction().begin();
+            List<StatusPedido> statusPedidos = entityManager.createQuery("SELECT c FROM StatusPedido c", StatusPedido.class).getResultList();
+            entityManager.getTransaction().commit();
+            return statusPedidos;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            entityManager.getTransaction().rollback();
+            return null;
+        }
+    }
+
+    public List<Cardapio> getAllCardapio() {
+        try {
+            entityManager.getTransaction().begin();
+            List<Cardapio> cardapios = entityManager.createQuery("SELECT c FROM Cardapio c", Cardapio.class).getResultList();
+            entityManager.getTransaction().commit();
+            return cardapios;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            entityManager.getTransaction().rollback();
+            return null;
+        }
+    }
+
 
     public Pedido getById(final int id) {
         try {
@@ -42,32 +88,7 @@ public class PedidoJpaDao {
         }
     }
 
-    public List<Cliente> getAllClientes() {
-        try {
-            TypedQuery<Cliente> query = entityManager.createQuery("SELECT c FROM Cliente c", Cliente.class);
-            return query.getResultList();
-        } finally {
-            entityManager.close();
-        }
-    }
 
-    public List<StatusPedido> getAllStatusPedidos() {
-        try {
-            TypedQuery<StatusPedido> query = entityManager.createQuery("SELECT s FROM StatusPedido s", StatusPedido.class);
-            return query.getResultList();
-        } finally {
-            entityManager.close();
-        }
-    }
-
-    public List<Cardapio> getAllCardapios() {
-        try {
-            TypedQuery<Cardapio> query = entityManager.createQuery("SELECT c FROM Cardapio c", Cardapio.class);
-            return query.getResultList();
-        } finally {
-            entityManager.close();
-        }
-    }
 
     public void removerPedido(final int id) {
         try {

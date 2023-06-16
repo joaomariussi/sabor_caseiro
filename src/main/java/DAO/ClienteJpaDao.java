@@ -124,4 +124,8 @@ public class ClienteJpaDao {
         }
         return cliente;
     }
+
+    public List<Cliente> getAllClientes() {
+        return null;
+    }
 }
