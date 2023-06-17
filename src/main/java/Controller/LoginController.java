@@ -22,7 +22,7 @@ public class LoginController {
 
     public void entrar() throws IOException {
         if (
-                Objects.equals(usuario.getText(), "teste") &&
+                Objects.equals(usuario.getText(), "saborcaseiro") &&
                         Objects.equals(senha.getText(), "123")
         ) {
             Scene scene = new Scene(

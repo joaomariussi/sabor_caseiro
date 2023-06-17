@@ -2,7 +2,6 @@ package Controller;
 
 import DAO.ClienteJpaDao;
 import Model.Cliente;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -55,7 +54,7 @@ public class ClienteController {
     }
 
     // Salva o cliente no banco
-    @FXML private void botaoSalvar(ActionEvent actionEvent) throws IOException {
+    @FXML private void botaoSalvar() {
 
         Cliente cliente = new Cliente();
 
@@ -73,7 +72,8 @@ public class ClienteController {
                 cliente.getCep().isEmpty() || cliente.getCidade().isEmpty() || cliente.getEstado().isEmpty();
 
         if (algumCampoVazio) {
-            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os dados do formulário!", "Erro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os dados do formulário!",
+                    "Erro", JOptionPane.ERROR_MESSAGE);
         } else {
             dao.persist(cliente);
             JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso");
