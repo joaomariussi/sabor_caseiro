@@ -44,20 +44,30 @@ public class CardapioController {
         Cardapio cardapio = new Cardapio();
 
         cardapio.setNome(String.valueOf(nome.getText()));
-        cardapio.setValorPessoa(Double.valueOf(String.valueOf(valor_pessoa.getText())));
 
-        // Verifica se algum campo está vazio
-        boolean algumCampoVazio = cardapio.getNome().isEmpty() || cardapio.getValorPessoa().equals("");
+        //Faz a validação se os campos estão preenchidos.
+        String valorPessoaText = valor_pessoa.getText();
+        if (valorPessoaText.isEmpty() || cardapio.getNome().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os dados do formulário!",
+                    "Erro", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
 
+        try {
+            double valorPessoa = Double.parseDouble(valorPessoaText);
+            cardapio.setValorPessoa(valorPessoa);
 
-        if (algumCampoVazio) {
-            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os dados do formulário!", "Erro", JOptionPane.ERROR_MESSAGE);
-        } else {
             dao.persist(cardapio);
             JOptionPane.showMessageDialog(null, "Cardápio cadastrado com sucesso");
             camposLimpos();
+
+            //cai nesse catch, caso o valor passado pelo usuário não seja um valor double, no caso uma string.
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "Digite um valor válido!",
+                    "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
+
     @FXML private void botaoBuscar() {
 
         TextInputDialog dialog = new TextInputDialog();
