@@ -6,6 +6,7 @@ import Model.PratosCardapio;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 import java.util.List;
 
 public class PratoJpaDao {
@@ -80,6 +81,20 @@ public class PratoJpaDao {
         } catch (Exception e) {
             e.printStackTrace();
             entityManager.getTransaction().rollback();
+        }
+    }
+
+    public PratosCardapio existePrato(int id) {
+
+        EntityManager entityManager1 = getEntityManager();
+        Query query = entityManager.createQuery("SELECT c FROM PratosCardapio c where c.id = :id");
+        query.setParameter("id", id);
+        List<PratosCardapio> pratosCardapios = query.getResultList();
+
+        if (!pratosCardapios.isEmpty()) {
+            return pratosCardapios.get(0);
+        } else {
+            return null;
         }
     }
 

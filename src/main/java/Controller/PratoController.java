@@ -5,7 +5,6 @@ import Model.Cardapio;
 import Model.PratosCardapio;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -50,7 +49,7 @@ public class PratoController {
         selecioneCardapio.setItems(cardapiosList);
     }
 
-    @FXML private void botaoSalvar(ActionEvent actionEvent) throws IOException {
+    @FXML private void botaoSalvar() {
 
         Cardapio cardapioSelecionado = selecioneCardapio.getValue();
 
@@ -61,10 +60,11 @@ public class PratoController {
 
 
         // Verifica se algum campo está vazio
-        boolean algumCampoVazio = pratosCardapio.getDescPrato() == null || pratosCardapio.getCardapio() == null;
+        boolean algumCampoVazio = pratosCardapio.getDescPrato() == null || pratosCardapio.getDescPrato().isEmpty() || pratosCardapio.getCardapio() == null;
 
         if (algumCampoVazio) {
-            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os dados!", "Erro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os dados!",
+                    "Erro", JOptionPane.ERROR_MESSAGE);
         } else {
             dao.persist(pratosCardapio);
             JOptionPane.showMessageDialog(null, "Prato cadastrado com sucesso");
@@ -72,7 +72,7 @@ public class PratoController {
         }
     }
 
-    @FXML private void botaoExlcuir() throws IOException {
+    @FXML private void botaoExlcuir() {
 
         TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Excluir Prato");
@@ -83,13 +83,19 @@ public class PratoController {
         result.ifPresent(idPrato -> {
             try {
                 int id = Integer.parseInt(idPrato);
-                dao.removerPrato(id);
-                JOptionPane.showMessageDialog(null, "Prato removido com sucesso!");
-                camposLimpos();
+                PratosCardapio pratosCardapio = dao.existePrato(id); // Verifica se o ID do prato existe. Se existe, cai no primeiro else.
+
+                if (pratosCardapio != null) {
+                    dao.removerPrato(id);
+                    JOptionPane.showMessageDialog(null, "Prato removido com sucesso!");
+                    camposLimpos();
+                } else {
+                    JOptionPane.showMessageDialog(null, "O ID do prato não existe!");
+                }
             } catch (NumberFormatException e) {
                 JOptionPane.showMessageDialog(null, "ID inválido. Digite um número válido!");
             } catch (Throwable t) {
-                JOptionPane.showMessageDialog(null, "Ocorreu um erro ao excluir o Prato.");
+                JOptionPane.showMessageDialog(null, "Ocorreu um erro ao excluir o prato.");
                 t.printStackTrace();
             }
         });
