@@ -8,6 +8,7 @@ import Model.StatusPedido;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 import java.util.List;
 
 public class PedidoJpaDao {
@@ -35,6 +36,7 @@ public class PedidoJpaDao {
         return entityManager;
     }
 
+    //Busca todos os clientes salvos no banco de dados.
     public List<Cliente> getAllClientes() {
         try {
             entityManager.getTransaction().begin();
@@ -48,6 +50,7 @@ public class PedidoJpaDao {
         }
     }
 
+    //Busca todos os status_pedidos salvos no banco de dados.
     public List<StatusPedido> getAllStatusPedido() {
         try {
             entityManager.getTransaction().begin();
@@ -61,6 +64,7 @@ public class PedidoJpaDao {
         }
     }
 
+    //busca todos os cardápios salvos no banco de dados.
     public List<Cardapio> getAllCardapio() {
         try {
             entityManager.getTransaction().begin();
@@ -102,6 +106,19 @@ public class PedidoJpaDao {
         }
     }
 
+    public Pedido existePedido(int id) {
+
+        EntityManager entityManager1 = getEntityManager();
+        Query query = entityManager.createQuery("SELECT c FROM Pedido c where c.id = :id");
+        query.setParameter("id", id);
+        List<Pedido> pedidos = query.getResultList();
+
+        if (!pedidos.isEmpty()) {
+            return pedidos.get(0);
+        } else {
+            return null;
+        }
+    }
 
     public Pedido persist(Pedido pedido) {
         try {

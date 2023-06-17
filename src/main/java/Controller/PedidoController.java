@@ -148,7 +148,7 @@ public class PedidoController {
                 selecioneCardapio.setValue(pedidoLocalizado.getCardapio());
                 data_entrega.setValue(pedidoLocalizado.getData_entrega());
             } else {
-                JOptionPane.showMessageDialog(null, "Nenhum cardápio localizado com esse ID!");
+                JOptionPane.showMessageDialog(null, "Nenhum pedido localizado com esse ID!");
             }
         }
     }
@@ -163,9 +163,15 @@ public class PedidoController {
         result.ifPresent(idPedido -> {
             try {
                 int id = Integer.parseInt(idPedido);
-                dao.removerPedido(id);
-                JOptionPane.showMessageDialog(null, "Pedido removido com sucesso!");
-                camposLimpos();
+                Pedido pedido = dao.existePedido(id); // Verifica se o ID do pedido existe. Se existe, cai no primeiro else.
+
+                if (pedido != null) {
+                    dao.removerPedido(id);
+                    JOptionPane.showMessageDialog(null, "Pedido removido com sucesso!");
+                    camposLimpos();
+                } else {
+                    JOptionPane.showMessageDialog(null, "O ID do pedido não existe!");
+                }
             } catch (NumberFormatException e) {
                 JOptionPane.showMessageDialog(null, "ID inválido. Digite um número válido!");
             } catch (Throwable t) {
