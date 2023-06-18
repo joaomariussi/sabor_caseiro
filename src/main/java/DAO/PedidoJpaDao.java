@@ -109,7 +109,7 @@ public class PedidoJpaDao {
     public Pedido existePedido(int id) {
 
         EntityManager entityManager1 = getEntityManager();
-        Query query = entityManager.createQuery("SELECT c FROM Pedido c where c.id = :id");
+        Query query = entityManager.createQuery("SELECT p FROM Pedido p where p.id = :id");
         query.setParameter("id", id);
         List<Pedido> pedidos = query.getResultList();
 
