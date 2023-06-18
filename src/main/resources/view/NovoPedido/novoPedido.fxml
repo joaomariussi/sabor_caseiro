@@ -50,13 +50,13 @@
       </Label>
       <TextField fx:id="valor_total" layoutX="141.0" layoutY="241.0" />
 
-      <Button fx:id="botaoExlcuir" defaultButton="true" layoutX="452.0" layoutY="362.0" onAction="#botaoExlcuir" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" />
+      <Button fx:id="botaoExlcuir" onAction="#botaoExlcuir" defaultButton="true" layoutX="452.0" layoutY="362.0" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" />
 
-      <Button fx:id="botaoBuscar" defaultButton="true" layoutX="307.0" layoutY="362.0" onAction="#botaoBuscar" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" />
+      <Button fx:id="botaoBuscar" onAction="#botaoBuscar" defaultButton="true" layoutX="307.0" layoutY="362.0" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Procurar" textFill="WHITE" />
 
-      <Button fx:id="botaoSalvar" defaultButton="true" layoutX="163.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#botaoSalvar" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #873100;" text="Salvar" textFill="WHITE" />
+      <Button fx:id="botaoSalvar" onAction="#botaoSalvar" defaultButton="true" layoutX="163.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #873100;" text="Salvar" textFill="WHITE" />
 
-      <Button fx:id="botaoVoltar" layoutX="32.0" layoutY="362.0" onAction="#botaoVoltar" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: #000000;" text="Voltar" textFill="#ffffff" />
+      <Button fx:id="botaoVoltar" onAction="#botaoVoltar" layoutX="32.0" layoutY="362.0" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: #000000;" text="Voltar" textFill="#ffffff" />
 
       <Label layoutX="1.0" layoutY="282.0" style="-fx-font-weight: bold;" text="Observações:">
          <font>
