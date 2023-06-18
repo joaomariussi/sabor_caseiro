@@ -66,11 +66,11 @@ public class Pedido {
         this.data_entrega = data_entrega;
     }
 
-    public Double getValorTotal() {
+    public Double getValor_total() {
         return valor_total;
     }
 
-    public void setValorTotal(Double valor_total) {
+    public void setValor_total(Double valor_total) {
         this.valor_total = valor_total;
     }
 
