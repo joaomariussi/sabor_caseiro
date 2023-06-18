@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="base" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:///C:/sabor_caseiro/src/main/resources/Images/todospedidos.jpg');" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TodosPedidosController">
+    <children>
+
+        <TableView fx:id="tabelaPedidos" layoutX="1.0" layoutY="7.0" prefHeight="343.0" prefWidth="616.0">
+            <columns>
+
+                <TableColumn fx:id="id" prefWidth="68.79999089241028" text="Código">
+                </TableColumn>
+
+                <TableColumn fx:id="cliente" prefWidth="135.2000732421875" text="Cliente">
+                </TableColumn>
+
+                <TableColumn fx:id="data_entrega" prefWidth="106.40000915527344" text="Data de Entrega">
+                </TableColumn>
+
+                <TableColumn fx:id="valor_total" prefWidth="74.4000244140625" text="Valor Total">
+                </TableColumn>
+
+                <TableColumn fx:id="statusPedido" prefWidth="88.79998779296875" text="Status">
+                </TableColumn>
+
+                <TableColumn fx:id="cardapio" prefWidth="135.20001220703125" text="Cardápio">
+                </TableColumn>
+            </columns>
+        </TableView>
+
+        <Button fx:id="botaoExcluir" defaultButton="true" layoutX="158.0" layoutY="362.0" onAction="#botaoExcluir" prefHeight="20.0" prefWidth="100" style="-fx-background-color: #873100;" text="Excluir" textFill="WHITE" />
+
+        <Button fx:id="botaoVoltar" layoutX="32.0" layoutY="362.0" onAction="#botaoVoltar" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: #000000;" text="Voltar" textFill="#ffffff" />
+
+    </children>
+</AnchorPane>
