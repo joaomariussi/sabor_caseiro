@@ -7,14 +7,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" snapToPixel="false" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Main">
+<Pane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" snapToPixel="false" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Main">
    <children>
       <ImageView pickOnBounds="true" smooth="false">
          <image>
             <Image url="@../../Images/main.png" />
          </image>
       </ImageView>
-      <Button fx:id="novoPedido" layoutX="43.0" layoutY="255.0" mnemonicParsing="false" onAction="#novoPedido" prefHeight="34.0" prefWidth="158.0" text="Novo Pedido" textFill="#000000">
+      <Button fx:id="novoPedido" layoutX="12.0" layoutY="251.0" mnemonicParsing="false" onAction="#novoPedido" prefHeight="34.0" prefWidth="158.0" text="Novo Pedido" textFill="#000000">
          <effect>
             <ColorAdjust />
          </effect>
@@ -22,7 +22,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="cadastrarCardapio" layoutX="221.0" layoutY="255.0" mnemonicParsing="false" onAction="#cadastrarCardapio" prefHeight="34.0" prefWidth="158.0" text="Novo Cardápio" textFill="#000000">
+      <Button fx:id="cadastrarCardapio" layoutX="218.0" layoutY="252.0" mnemonicParsing="false" onAction="#cadastrarCardapio" prefHeight="34.0" prefWidth="158.0" text="Novo Cardápio" textFill="#000000">
          <effect>
             <ColorAdjust />
          </effect>
@@ -30,7 +30,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="cadastrarCliente" layoutX="400.0" layoutY="255.0" mnemonicParsing="false" onAction="#cadastrarCliente" prefHeight="34.0" prefWidth="158.0" text="Novo Cliente" textFill="#000000">
+      <Button fx:id="cadastrarCliente" layoutX="426.0" layoutY="252.0" mnemonicParsing="false" onAction="#cadastrarCliente" prefHeight="34.0" prefWidth="158.0" text="Novo Cliente" textFill="#000000">
          <effect>
             <ColorAdjust />
          </effect>
@@ -38,7 +38,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-   <Button fx:id="cadastrarPrato" layoutX="221.0" layoutY="315.0" mnemonicParsing="false" onAction="#cadastrarPrato" prefHeight="34.0" prefWidth="158.0" text="Novo Prato" textFill="#000000">
+   <Button fx:id="cadastrarPrato" layoutX="108.0" layoutY="315.0" mnemonicParsing="false" onAction="#cadastrarPrato" prefHeight="34.0" prefWidth="158.0" text="Novo Prato" textFill="#000000">
       <effect>
          <ColorAdjust />
       </effect>
@@ -46,5 +46,13 @@
          <Font name="System Bold" size="14.0" />
       </font>
    </Button>
+      <Button fx:id="todosPedidos" layoutX="363.0" layoutY="313.0" mnemonicParsing="false" onAction="#todosPedidos" prefHeight="34.0" prefWidth="158.0" text="Pedidos" textFill="#000000">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
