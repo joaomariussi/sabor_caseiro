@@ -117,7 +117,7 @@ public class PedidoController {
             pedido.setStatusPedido(statusPedidoSelecionado);
             pedido.setCardapio(cardapioSelecionado);
             pedido.setObservacoes(observacoes.getText());
-            pedido.setValorTotal(Double.parseDouble(valorTotalStr));
+            pedido.setValor_total(Double.parseDouble(valorTotalStr));
             pedido.setData_entrega(dataEntrega);
 
             // Salva o pedido no banco de dados
