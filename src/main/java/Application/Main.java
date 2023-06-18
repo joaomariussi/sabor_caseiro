@@ -19,6 +19,7 @@ public class Main extends Application {
     @FXML public Button cadastrarCliente;
     @FXML public Button cadastrarCardapio;
     @FXML public Button cadastrarPrato;
+    @FXML public Button todosPedidos;
 
     /**
      * @param args |
@@ -78,6 +79,16 @@ public class Main extends Application {
                 new FXMLLoader( getClass().getResource("/view/NovoPrato/novoPrato.fxml") ).load()
         );
         stage.setTitle("Cadastro de Pratos");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void todosPedidos() throws IOException {
+        Stage stage = (Stage) base.getScene().getWindow();
+        Scene scene = new Scene(
+                new FXMLLoader( getClass().getResource("/view/todosPedidos.fxml") ).load()
+        );
+        stage.setTitle("Todos Pedidos");
         stage.setScene(scene);
         stage.show();
     }
